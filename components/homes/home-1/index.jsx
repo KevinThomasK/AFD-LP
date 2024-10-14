@@ -39,8 +39,9 @@ export default function Home1({ onePage = false, dark = false }) {
           <div className="row">
             <div className="col-lg-4 mb-md-60 mb-xs-50">
               <h2 className="section-title mb-20 wow fadeInUp">
-                India'a Oldest NIFT | NID Entrance Exam
+                India&apos;s Oldest NIFT | NID Entrance Exam
               </h2>
+
               {/* <p
                 className="section-descr mb-40 wow fadeInUp"
                 data-wow-delay="0.1s"

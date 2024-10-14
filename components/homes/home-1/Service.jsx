@@ -232,9 +232,9 @@ export default function Service() {
                 <div className="services-text-container">
                   <h4 className="services-title">The Creative Ability Test</h4>
                   <p className="text-gray mb-0">
-                    CAT in the NIFT entrance exam evaluates a candidate's
+                    CAT in the NIFT entrance exam evaluates a candidate&apos;s
                     creative thinking, innovation, drawing skills, and ability
-                    to develop new ideas and concepts.
+                    to develop new ideas and concepts.
                   </p>
                 </div>
               </div>
