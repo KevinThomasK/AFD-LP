@@ -51,7 +51,7 @@ export default function Header1({ links }) {
           <li>
             <a href="#contact" className="opacity-1 no-hover">
               <span className="link-hover-anim underline" data-link-animate="y">
-                Let's work together
+                Let&#39;s work together
               </span>
             </a>
           </li>

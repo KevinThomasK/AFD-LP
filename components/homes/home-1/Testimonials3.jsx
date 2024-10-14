@@ -14,7 +14,7 @@ export default function Testimonials3() {
           </h2>
           <h3 className="section-title mb-50 mb-sm-30">
             <span className="wow charsAnimIn" data-splitting="chars">
-              We're trusted by leading worldwide companies.
+              We&#39;re trusted by leading worldwide companies.
             </span>
           </h3>
         </div>

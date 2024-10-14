@@ -6,7 +6,7 @@ export default function Contact2() {
       <div className="row">
         <div className="col-lg-6">
           <div className="pe-lg-5">
-            <h2 className="h5">Don't hesitate to reach out to us.</h2>
+            <h2 className="h5">Don&#39;t hesitate to reach out to us.</h2>
 
             <p className="text-gray mb-0">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
