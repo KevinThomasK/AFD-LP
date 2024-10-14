@@ -1,27 +1,27 @@
 export const faqs = [
   {
     id: 1,
-    question: "01. Discussion",
+    question: "01. What is NIFT?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.",
+      "The NIFT (National Institute of Fashion Technology) is a pioneering institute for fashion design, technology and management studies. The NIFT institutes are proud of their ability to combine knowledge, traditional and modern art, academic freedom, design and tech innovations, and creative thinking to keep their classes up-to-date with the changing world.",
   },
   {
     id: 2,
-    question: "02. Design",
+    question: "02. Who is eligible for the NIFT B.Des program?",
     answer:
-      "Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet dignissim pellentesque felis.",
+      "The following are the eligibility for NIFT B.Des: Maximum age limit: 24 years , Must have passed the +2 level examination in the 10+2 pattern from a recognised board.",
   },
   {
     id: 3,
-    question: "03. Development",
+    question: "03. How many seats are available in NIFT?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna.",
+      "The following are seats available for the different programmes : B.Des 3309 B.F.Tech 652 MFM 786 M.Des 304 M.F.Tech 	148",
   },
   {
     id: 4,
-    question: "04. Production",
+    question: "04. When is the NIFT entrance exam held?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna.",
+      "The exam is typically conducted in February each year. Specific dates are announced on the official NIFT website.",
   },
 ];
 

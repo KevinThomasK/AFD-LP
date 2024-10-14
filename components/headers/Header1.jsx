@@ -1,9 +1,10 @@
 "use client";
-import Nav from "./components/Nav";
-import LanguageSelect from "./components/LanguageSelect";
+//import Nav from "./components/Nav";
+//import LanguageSelect from "./components/LanguageSelect";
 import Image from "next/image";
 import { toggleMobileMenu } from "@/utlis/toggleMobileMenu";
 import Link from "next/link";
+import { CiMobile3 } from "react-icons/ci";
 
 export default function Header1({ links }) {
   return (
@@ -14,16 +15,16 @@ export default function Header1({ links }) {
       <div className="nav-logo-wrap local-scroll">
         <Link href="/" className="logo">
           <Image
-            src="/assets/images/logo-dark.svg"
+            src="/assets/images/afd/logo.png"
             alt="Your Company Logo"
-            width={105}
+            width={205}
             height={34}
             className="light-mode-logo"
           />
           <Image
-            src="/assets/images/logo-white.svg"
+            src="/assets/images/afd/logo.png"
             alt="Your Company Logo"
-            width={105}
+            width={205}
             height={34}
             className="dark-mode-logo"
           />
@@ -41,17 +42,18 @@ export default function Header1({ links }) {
       </div>
       {/* Main Menu */}
       <div className="inner-nav desktop-nav">
-        <ul className="clearlist scroll-nav local-scroll scrollspyLinks">
+        {/* <ul className="clearlist scroll-nav local-scroll scrollspyLinks">
           <Nav links={links} />
-        </ul>
+        </ul> */}
         <ul className="items-end clearlist local-scroll">
           {/* Languages */}
-          <LanguageSelect />
+          {/* <LanguageSelect /> */}
           {/* End Languages */}
           <li>
             <a href="#contact" className="opacity-1 no-hover">
-              <span className="link-hover-anim underline" data-link-animate="y">
-                Let&#39;s work together
+              <span className="link-hover-anim underline d-flex align-items-center">
+                <CiMobile3 className="me-2" style={{ fontSize: "24px" }} />{" "}
+                9895484652
               </span>
             </a>
           </li>
@@ -61,3 +63,6 @@ export default function Header1({ links }) {
     </div>
   );
 }
+
+// 9895484652
+// info@afdindia.com

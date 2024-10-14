@@ -36,19 +36,23 @@ export default function About() {
         </div>
       </div>
       <div className="col-lg-6 col-xl-5 offset-xl-1">
-        <h4 className="h5">Our Mission</h4>
+        {/* <h4 className="h5">Our Legacy</h4> */}
         <p className="text-gray">
-          We believe that a website is the foundation of a successful online
-          presence, and our goal is to help businesses establish a&nbsp;strong
-          digital presence. Our process begins with understanding your business
-          goals.
+          At AFD India, we specialize in coaching for entrance exams to top
+          design and architecture colleges, including NIFT, NID, NATA, CEED,
+          UCEED, MIT, UID, CEPT, and many more. Apart from the coaching, we
+          assist students in securing admissions to Art, Animation,
+          Architecture, Design, and Fashion programs at institutions both in
+          India and abroad. Our distinguished faculty, comprised of NID and NIFT
+          graduates and seasoned architects, offers unmatched expertise.
         </p>
-        <h4 className="h5">Our Vision</h4>
+        {/* <h4 className="h5">Our Vision</h4> */}
         <p className="text-gray">
-          We then use this information to create a custom website that not only
-          reflects your brand but also helps you achieve your business
-          objectives. From responsive design to intuitive navigation, we focus
-          on every detail.
+          Our founder, Ms. Julie James, is a distinguished trainer for
+          NIFT/NID/UCEED/NATA exams, leveraging her extensive experience as a
+          postgraduate from NIFT New Delhi and former HOD of Fashion Design at
+          MG University. Led by her, AFD India has been a leader in design test
+          preparation for 25 years, consistently producing top-ranking students.
         </p>
       </div>
     </div>

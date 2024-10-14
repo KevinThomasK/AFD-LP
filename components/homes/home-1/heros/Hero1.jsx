@@ -7,10 +7,20 @@ import { useEffect, useState } from "react";
 import ModalVideo from "react-modal-video";
 
 export default function Hero1() {
+  const [firstImageSrc, setFirstImageSrc] = useState(
+    "/assets/images/afd/one.jpg"
+  );
+
   useEffect(() => {
     parallaxMouseMovement();
   }, []);
+
   const [isOpen, setOpen] = useState(false);
+
+  // Function to handle image click
+  const handleImageClick = (newSrc) => {
+    setFirstImageSrc(newSrc); // Update the first image's src
+  };
 
   return (
     <>
@@ -23,14 +33,13 @@ export default function Hero1() {
               <div>
                 <h2
                   className="section-caption mb-30 mb-xs-10 wow fadeInUp"
+                  style={{ color: "black", fontSize: "30px" }}
                   data-wow-duration="1.2s"
                 >
-                  Resonance Creative Studio
+                  AFDINDIA
                 </h2>
                 <h1 className="hs-title-1 mb-30">
-                  <AnimatedText
-                    text={"Grow your business with a new website."}
-                  />
+                  <AnimatedText text={" No.1 NIFT Entrance Coaching Center"} />
                 </h1>
 
                 <p
@@ -38,8 +47,7 @@ export default function Hero1() {
                   data-wow-delay="0.6s"
                   data-wow-duration="1.2s"
                 >
-                  Resonance is a full-service creative studio creating beautiful
-                  digital experiences and products.
+                  Embark on your Fashion Journey
                 </p>
                 <div
                   className="local-scroll mt-n10 wow fadeInUp wch-unset"
@@ -51,14 +59,7 @@ export default function Hero1() {
                     href="#about"
                     className="btn btn-mod btn-large btn-round btn-hover-anim align-middle me-2 me-sm-5 mt-10"
                   >
-                    <span>Discover now</span>
-                  </a>
-                  <a
-                    onClick={() => setOpen(true)}
-                    className="link-hover-anim align-middle lightbox mfp-iframe mt-10"
-                    data-link-animate="y"
-                  >
-                    <i className="icon-play size-13 me-1" /> How it works?
+                    <span>Join Now</span>
                   </a>
                 </div>
               </div>
@@ -67,6 +68,7 @@ export default function Hero1() {
             {/* Stack Images */}
             <div className="col-md-5 offset-md-1 d-flex align-items-center">
               <div className="stack-images">
+                {/* First Image */}
                 <div
                   className="stack-images-1 parallax-mousemove"
                   data-offset={30}
@@ -77,16 +79,18 @@ export default function Hero1() {
                     data-wow-duration="1.75s"
                   >
                     <Image
-                      src="/assets/images/stack-image-1.jpg"
+                      src={firstImageSrc} // Display the first image's src from state
                       alt="Image Description"
                       width={600}
                       height={800}
                     />
                   </div>
                 </div>
+                {/* Second Image */}
                 <div
                   className="stack-images-2 parallax-mousemove"
                   data-offset={60}
+                  onClick={() => handleImageClick("/assets/images/afd/two.jpg")} // Set this image as first image on click
                 >
                   <div
                     className="wow clipRightIn"
@@ -96,14 +100,18 @@ export default function Hero1() {
                     <Image
                       width={600}
                       height={800}
-                      src="/assets/images/stack-image-2.jpg"
+                      src="/assets/images/afd/two.jpg"
                       alt="Image Description"
                     />
                   </div>
                 </div>
+                {/* Third Image */}
                 <div
                   className="stack-images-3 parallax-mousemove"
                   data-offset={90}
+                  onClick={() =>
+                    handleImageClick("/assets/images/afd/five.jpg")
+                  } // Set this image as first image on click
                 >
                   <div
                     className="wow clipRightIn"
@@ -113,7 +121,7 @@ export default function Hero1() {
                     <Image
                       width={600}
                       height={800}
-                      src="/assets/images/stack-image-3.jpg"
+                      src="/assets/images/afd/five.jpg"
                       alt="Image Description"
                     />
                   </div>

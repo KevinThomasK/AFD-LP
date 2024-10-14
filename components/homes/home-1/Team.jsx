@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { teamMembers } from "@/data/team";
 import Image from "next/image";
+import { FaBook } from "react-icons/fa";
 
 export default function Team() {
   return (
@@ -11,16 +12,14 @@ export default function Team() {
         {/* Quote */}
         <div className="col-md-6 mb-sm-60 mb-xs-40 d-flex align-items-center">
           <blockquote className="testimonial mb-0 wow fadeInUp">
-            <div className="blockquote-icon" aria-hidden="true">
-              ”
-            </div>
-            <p>
-              We are strong team who brings innovative ideas into production.
-            </p>
+            {/* <div className="blockquote-icon" aria-hidden="true">
+              <FaBook style={{ fontSize: "28px", marginBottom: "50px" }} />
+            </div> */}
+            <p>NIFT Entrance Courses From afdindia</p>
             <footer>
-              <div className="section-line mb-10" />
+              {/* <div className="section-line mb-10" />
               Thomas Johnson
-              <div className="small">Developer, Co-founder</div>
+              <div className="small">Developer, Co-founder</div> */}
             </footer>
           </blockquote>
         </div>

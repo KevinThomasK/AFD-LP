@@ -13,10 +13,8 @@ import Hero1 from "@/components/homes/home-1/heros/Hero1";
 import { mainDemoOnepage } from "@/data/menu";
 
 export const metadata = {
-  title:
-    "Home 1 Main Demo Onepage || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
-  description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+  title: "afdindia",
+  description: "afdindia",
 };
 export default function Home1MainDemoOnepage() {
   return (
@@ -30,8 +28,8 @@ export default function Home1MainDemoOnepage() {
             <ParallaxContainer
               className="home-section bg-gray-light-1 bg-light-alpha-90 parallax-5 parallax-mousemove-scene scrollSpysection"
               style={{
-                backgroundImage:
-                  "url(/assets/images/full-width-images/section-bg-1.jpg)",
+                // background: "yellow",
+                backgroundImage: "url(/assets/images/afd/three.jpg)",
               }}
               id="home"
             >

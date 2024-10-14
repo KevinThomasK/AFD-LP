@@ -8,8 +8,8 @@ import Contact from "@/components/homes/home-1/Contact";
 import Facts from "@/components/homes/home-1/Facts";
 import Faq from "@/components/homes/home-1/Faq";
 import Features from "@/components/homes/home-1/Features";
-import NewsLetter from "@/components/homes/home-1/NewsLetter";
-import Portfolio from "@/components/homes/home-1/Portfolio";
+//import NewsLetter from "@/components/homes/home-1/NewsLetter";
+//import Portfolio from "@/components/homes/home-1/Portfolio";
 import Promo from "@/components/homes/home-1/Promo";
 import Service from "@/components/homes/home-1/Service";
 import Team from "@/components/homes/home-1/Team";
@@ -28,6 +28,48 @@ const ParallaxContainer = dynamic(
 export default function Home1({ onePage = false, dark = false }) {
   return (
     <>
+      <ParallaxContainer
+        className="page-section bg-dark-1 bg-dark-alpha-90 parallax-5 light-content"
+        style={{
+          backgroundImage:
+            "url(/assets/images/full-width-images/section-bg-2.jpg)",
+        }}
+      >
+        <div className="container position-relative">
+          <div className="row">
+            <div className="col-lg-4 mb-md-60 mb-xs-50">
+              <h2 className="section-title mb-20 wow fadeInUp">
+                India'a Oldest NIFT | NID Entrance Exam
+              </h2>
+              {/* <p
+                className="section-descr mb-40 wow fadeInUp"
+                data-wow-delay="0.1s"
+              >
+                We provide the effective ideas that grow businesses of our
+                clients.
+              </p> */}
+              <div className="local-scroll wow fadeInUp" data-wow-delay="0.2s">
+                {onePage ? (
+                  <a
+                    href="#contact"
+                    className="btn btn-mod btn-w btn-large btn-round btn-hover-anim"
+                  >
+                    <span>Contact Now</span>
+                  </a>
+                ) : (
+                  <Link
+                    href={`/main-pages-contact-1${dark ? "-dark" : ""}`}
+                    className="btn btn-mod btn-w btn-large btn-round btn-hover-anim"
+                  >
+                    <span>Request Price</span>
+                  </Link>
+                )}
+              </div>
+            </div>{" "}
+            <Facts />
+          </div>
+        </div>
+      </ParallaxContainer>
       <section
         className={`page-section scrollSpysection ${
           dark ? "bg-dark-1 light-content" : ""
@@ -37,9 +79,9 @@ export default function Home1({ onePage = false, dark = false }) {
         <div className="container position-relative">
           <div className="row mb-60 mb-xs-30">
             <div className="col-md-6">
-              <h2 className="section-caption mb-xs-10">Our Story</h2>
+              {/* <h2 className="section-caption mb-xs-10">Our Story</h2> */}
               <h3 className="section-title mb-0">
-                <AnimatedText text="Better way to create stanning layouts." />
+                <AnimatedText text="About Us" />
               </h3>
             </div>
             <div className="col-md-5 offset-md-1 relative text-start text-md-end pt-40 pt-sm-20 local-scroll">
@@ -66,7 +108,7 @@ export default function Home1({ onePage = false, dark = false }) {
                   data-link-animate="y"
                 >
                   <span className="link-strong link-strong-unhovered">
-                    Learn more about us{" "}
+                    Contact Us Now
                     <i
                       className="mi-arrow-right size-18"
                       aria-hidden="true"
@@ -76,7 +118,7 @@ export default function Home1({ onePage = false, dark = false }) {
                     className="link-strong link-strong-hovered"
                     aria-hidden="true"
                   >
-                    Learn more about us{" "}
+                    Contact Us Now
                     <i
                       className="mi-arrow-right size-18"
                       aria-hidden="true"
@@ -90,7 +132,7 @@ export default function Home1({ onePage = false, dark = false }) {
                   data-link-animate="y"
                 >
                   <span className="link-strong link-strong-unhovered">
-                    Learn more about us{" "}
+                    Contact Us Now
                     <i
                       className="mi-arrow-right size-18"
                       aria-hidden="true"
@@ -100,7 +142,7 @@ export default function Home1({ onePage = false, dark = false }) {
                     className="link-strong link-strong-hovered"
                     aria-hidden="true"
                   >
-                    Learn more about us{" "}
+                    Contact Us Now
                     <i
                       className="mi-arrow-right size-18"
                       aria-hidden="true"
@@ -110,6 +152,7 @@ export default function Home1({ onePage = false, dark = false }) {
               )}
             </div>
           </div>
+
           <About />
         </div>
       </section>
@@ -131,55 +174,13 @@ export default function Home1({ onePage = false, dark = false }) {
         <Service />
       </section>
 
-      <ParallaxContainer
-        className="page-section bg-dark-1 bg-dark-alpha-90 parallax-5 light-content"
-        style={{
-          backgroundImage:
-            "url(/assets/images/full-width-images/section-bg-2.jpg)",
-        }}
-      >
-        <div className="container position-relative">
-          <div className="row">
-            <div className="col-lg-4 mb-md-60 mb-xs-50">
-              <h2 className="section-title mb-20 wow fadeInUp">
-                Check recent achievements.
-              </h2>
-              <p
-                className="section-descr mb-40 wow fadeInUp"
-                data-wow-delay="0.1s"
-              >
-                We provide the effective ideas that grow businesses of our
-                clients.
-              </p>
-              <div className="local-scroll wow fadeInUp" data-wow-delay="0.2s">
-                {onePage ? (
-                  <a
-                    href="#contact"
-                    className="btn btn-mod btn-w btn-large btn-round btn-hover-anim"
-                  >
-                    <span>Request Price</span>
-                  </a>
-                ) : (
-                  <Link
-                    href={`/main-pages-contact-1${dark ? "-dark" : ""}`}
-                    className="btn btn-mod btn-w btn-large btn-round btn-hover-anim"
-                  >
-                    <span>Request Price</span>
-                  </Link>
-                )}
-              </div>
-            </div>{" "}
-            <Facts />
-          </div>
-        </div>
-      </ParallaxContainer>
       <section
         className={`page-section  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""
         }`}
         id="portfolio"
       >
-        <Portfolio />
+        {/* <Portfolio /> */}
       </section>
       <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
       <section
@@ -235,7 +236,7 @@ export default function Home1({ onePage = false, dark = false }) {
       <section
         className={`page-section  ${dark ? "bg-dark-1 light-content" : ""}`}
       >
-        <Benefits />{" "}
+        <Benefits />
       </section>
       <section
         className={`page-section pt-0 pb-0  ${dark ? "light-content" : ""}`}
@@ -381,7 +382,7 @@ export default function Home1({ onePage = false, dark = false }) {
           {/* End Blog Posts Grid */}
         </div>
       </section>
-      <section
+      {/* <section
         className="page-section bg-dark-1 bg-dark-alpha-90 light-content"
         style={{
           backgroundImage:
@@ -389,7 +390,7 @@ export default function Home1({ onePage = false, dark = false }) {
         }}
       >
         <NewsLetter />
-      </section>
+      </section> */}
       <section
         className={`page-section  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""

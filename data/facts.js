@@ -2,26 +2,26 @@ export const numberItems = [
   {
     id: 1,
     delay: "0.4s",
-    title: "28%",
-    description: "Resent tincidunt lacus sedenim posuere posuere nulla acusan.",
+    title: "25+",
+    description: "Years Of Experience",
   },
   {
     id: 2,
     delay: "0.6s",
-    title: "1.5k",
-    description: "Curabitur eu quam auctor nuca convallis metus nec feugia.",
+    title: "30+",
+    description: "Experienced Faculties",
   },
   {
     id: 3,
     delay: "0.8s",
-    title: "30+",
-    description: "Pellentesque pharetra libero eget vestibulum ullamcorper.",
+    title: "6500+",
+    description: "Success Stories",
   },
   {
     id: 4,
     delay: "1s",
-    title: "2x",
-    description: "Suspendisse a scelerisque vitae rutrum posuere sec lacus.",
+    title: "86%",
+    description: "Word Of Mouth",
   },
 ];
 export const numberItems2 = [

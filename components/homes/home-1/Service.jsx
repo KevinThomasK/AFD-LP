@@ -1,15 +1,23 @@
+"use client";
 import AnimatedText from "@/components/common/AnimatedText";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 export default function Service() {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  // Full text
+  const fullText = `NIFT has established numerous exam centers across the country, allowing students to select the most convenient location. Exam cities include Kolkata, Patna, Ahmedabad, Bhopal, Kannur, Bhubaneswar, Mumbai, Nagpur, Madurai, Cochin, Lucknow, Chandigarh, Bengaluru, Coimbatore, Dehradun, Pune, Ranchi, Udaipur, Hyderabad, Guwahati, Jaipur, Jodhpur, Surat, Srinagar, Vadodara, Visakhapatnam, Jammu, Chennai, New Delhi, Noida, Faridabad, Ghaziabad, Rajkot, Gurugram, and Daman.`;
+
+  // Text to display before "Read more"
+  const shortText = `NIFT has established numerous exam centers across the country, allowing students to select the most convenient location. Exam cities include Kolkata, Patna, Ahmedabad, Bhopal, Kannur,`;
   return (
     <div className="container position-relative">
       <div className="row">
         <div className="col-lg-6 mb-md-60 mb-sm-30">
-          <h2 className="section-caption mb-xs-10">Our Services</h2>
+          {/* <h2 className="section-caption mb-xs-10">Our Services</h2> */}
           <h3 className="section-title mb-30">
-            <AnimatedText text="We provide the best development solutions." />
+            <AnimatedText text="NIFT Entrance Exam 2025" />
           </h3>
           <div className="row">
             <div className="col-lg-10">
@@ -17,8 +25,8 @@ export default function Service() {
                 className="section-descr mb-50 mb-sm-30 wow fadeInUp"
                 data-wow-delay="0.4s"
               >
-                The power of design help us to solve complex problems and
-                cultivate business solutions.
+                NIFT offers undergraduate & postgraduate programs, in fashion
+                design, textile design, fashion communication and more.
               </p>
             </div>
           </div>
@@ -36,7 +44,7 @@ export default function Service() {
                 aria-selected="true"
                 data-bs-toggle="tab"
               >
-                Brand Strategy <span className="number">01</span>
+                NIFT<span className="number">01</span>
               </a>
             </li>
             <li role="presentation">
@@ -47,7 +55,7 @@ export default function Service() {
                 aria-selected="false"
                 data-bs-toggle="tab"
               >
-                Art Direction <span className="number">02</span>
+                NIFT 2025 Entrance <span className="number">02</span>
               </a>
             </li>
             <li role="presentation">
@@ -58,7 +66,7 @@ export default function Service() {
                 aria-selected="false"
                 data-bs-toggle="tab"
               >
-                Creative Design <span className="number">03</span>
+                NIFT Exam Centers <span className="number">03</span>
               </a>
             </li>
             <li role="presentation">
@@ -69,7 +77,7 @@ export default function Service() {
                 aria-selected="false"
                 data-bs-toggle="tab"
               >
-                Development <span className="number">04</span>
+                GAT <span className="number">04</span>
               </a>
             </li>
             <li role="presentation">
@@ -80,10 +88,10 @@ export default function Service() {
                 aria-selected="false"
                 data-bs-toggle="tab"
               >
-                Photography <span className="number">05</span>
+                CAT <span className="number">05</span>
               </a>
             </li>
-            <li role="presentation">
+            {/* <li role="presentation">
               <a
                 href="#services-item-6"
                 aria-controls="services-item-6"
@@ -93,7 +101,7 @@ export default function Service() {
               >
                 Marketing <span className="number">06</span>
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
         <div
@@ -110,11 +118,13 @@ export default function Service() {
             >
               <div className="services-text">
                 <div className="services-text-container">
-                  <h4 className="services-title">Brand Strategy</h4>
+                  <h4 className="services-title">
+                    National Institute of Fashion Technology
+                  </h4>
                   <p className="text-gray mb-0">
-                    The core identity reflects consistent associations with the
-                    brand whereas the extended identity involves the intricate
-                    details of the brand that help generate a constant motif.
+                    NIFT New Delhi campus was established in 1986. In 1995
+                    campuses were set up in Chennai, Gandhinagar, Kolkata,
+                    Hyderabad & Mumbai. In 1997, this expanded to Bengaluru.
                   </p>
                 </div>
               </div>
@@ -135,11 +145,13 @@ export default function Service() {
             >
               <div className="services-text">
                 <div className="services-text-container">
-                  <h4 className="services-title">Art Direction</h4>
+                  <h4 className="services-title">Entrance 2025</h4>
                   <p className="text-gray mb-0">
-                    The core identity reflects consistent associations with the
-                    brand whereas the extended identity involves the intricate
-                    details of the brand that help generate a constant motif.
+                    NIFT will hold its entrance exams in February 2025.
+                    Admission involves a two-stage process: Phase one includes
+                    the General Ability Test (GAT) and Creative Ability Test
+                    (CAT), while phase two features a situation test and
+                    group discussion.
                   </p>
                 </div>
               </div>
@@ -160,11 +172,18 @@ export default function Service() {
             >
               <div className="services-text">
                 <div className="services-text-container">
-                  <h4 className="services-title">Creative Design</h4>
+                  <h4 className="services-title">Exam Centers</h4>
                   <p className="text-gray mb-0">
-                    The core identity reflects consistent associations with the
-                    brand whereas the extended identity involves the intricate
-                    details of the brand that help generate a constant motif.
+                    {isExpanded ? fullText : shortText}{" "}
+                    {/* Toggle between full and short text */}
+                    <span
+                      onClick={() => setIsExpanded(!isExpanded)} // Toggle the expanded state
+                      className="text-primary"
+                      style={{ cursor: "pointer", marginLeft: "5px" }}
+                    >
+                      {isExpanded ? "Read less" : "Read more"}{" "}
+                      {/* Change link text */}
+                    </span>
                   </p>
                 </div>
               </div>
@@ -185,11 +204,12 @@ export default function Service() {
             >
               <div className="services-text">
                 <div className="services-text-container">
-                  <h4 className="services-title">Development</h4>
+                  <h4 className="services-title">The General Ability Test</h4>
                   <p className="text-gray mb-0">
-                    The core identity reflects consistent associations with the
-                    brand whereas the extended identity involves the intricate
-                    details of the brand that help generate a constant motif.
+                    GAT is a key component of the NIFT entrance exam, assessing
+                    candidates on various skills including quantitative ability,
+                    communication, English comprehension, analytical ability,
+                    and general knowledge.
                   </p>
                 </div>
               </div>
@@ -210,11 +230,11 @@ export default function Service() {
             >
               <div className="services-text">
                 <div className="services-text-container">
-                  <h4 className="services-title">Photography</h4>
+                  <h4 className="services-title">The Creative Ability Test</h4>
                   <p className="text-gray mb-0">
-                    The core identity reflects consistent associations with the
-                    brand whereas the extended identity involves the intricate
-                    details of the brand that help generate a constant motif.
+                    CAT in the NIFT entrance exam evaluates a candidate's
+                    creative thinking, innovation, drawing skills, and ability
+                    to develop new ideas and concepts.
                   </p>
                 </div>
               </div>
