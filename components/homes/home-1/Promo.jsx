@@ -75,14 +75,14 @@ export default function Promo() {
               <Image
                 width={633}
                 height={821}
-                src="/assets/images/afd/b2.jpg"
+                src="/assets/images/afd/whyafd.jpg"
                 alt="Image Description"
                 className="wow scaleOutIn"
                 data-wow-duration="1.2s"
                 data-wow-offset={205}
               />
             </div>
-            <div className="call-action-3-image-2-wrap d-flex align-items-center">
+            {/* <div className="call-action-3-image-2-wrap d-flex align-items-center">
               <div
                 className="call-action-3-image-2"
                 data-rellax-y=""
@@ -92,13 +92,13 @@ export default function Promo() {
                 <Image
                   width={386}
                   height={500}
-                  src="/assets/images/afd/b3.jpg"
+                  src="/assets/images/afd/whyafd.jpg"
                   alt="Image Description"
                   className="wow scaleOutIn"
                   data-wow-duration="1.2s"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         {/* End Images */}

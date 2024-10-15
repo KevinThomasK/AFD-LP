@@ -11,6 +11,7 @@ const ParallaxContainer = dynamic(
 import Hero1 from "@/components/homes/home-1/heros/Hero1";
 
 import { mainDemoOnepage } from "@/data/menu";
+import StickyModal from "@/components/homes/StickyModal";
 
 export const metadata = {
   title: "afdindia",
@@ -38,6 +39,7 @@ export default function Home1MainDemoOnepage() {
             <Home1 onePage />
           </main>
           <Footer1 />
+          <StickyModal />
         </div>{" "}
       </div>
     </>

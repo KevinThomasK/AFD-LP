@@ -15,6 +15,7 @@ import Service from "@/components/homes/home-1/Service";
 import Team from "@/components/homes/home-1/Team";
 import Testimonials from "@/components/homes/home-1/Testimonials";
 import CustomExamSection from "@/components/homes/home-1/CustomExamSection";
+import CustomSection from "@/components/homes/home-1/CustomSection";
 import Link from "next/link";
 import Testimonials2 from "./Teatimonials2";
 import Brands2 from "./Brands2";
@@ -353,7 +354,7 @@ export default function Home1({ onePage = false, dark = false }) {
       >
         <NewsLetter />
       </section> */}
-      <CustomExamSection />
+      <CustomSection />
       <section
         className={`page-section  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""
