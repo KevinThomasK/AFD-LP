@@ -12,7 +12,7 @@ export default function Contact() {
               <h2 className="section-caption mb-xs-10">Contact Us</h2>
               <h3 className="section-title mb-0">
                 <span className="wow charsAnimIn" data-splitting="chars">
-                  <AnimatedText text="Let’s start the productive work." />
+                  <AnimatedText text="Register Now to Kickstart Your Fashion Career." />
                 </span>
               </h3>
             </div>
@@ -55,11 +55,9 @@ export default function Contact() {
                 <h4 className="alt-features-title">Say hello</h4>
                 <div className="alt-features-descr clearlinks">
                   <div>
-                    <a href="mailto:ibthemes21@gmail.com">
-                      ibthemes21@gmail.com
-                    </a>
+                    <a href="mailto:info@afdindia.com">info@afdindia.com</a>
                   </div>
-                  <div>+1 837 652 8800</div>
+                  <div>+91 9895484652</div>
                 </div>
               </div>
             </div>
@@ -86,7 +84,8 @@ export default function Contact() {
                 </div>
                 <h4 className="alt-features-title">Location</h4>
                 <div className="alt-features-descr">
-                  123 King Street, London W6 9JG, United Kingdom
+                  Metro Pillar 381, MI Arcade, 3rd Floor, NH544, Edappally Toll,
+                  Kochi, Kerala 682024
                 </div>
               </div>
             </div>
@@ -180,9 +179,10 @@ export default function Contact() {
           </form>
           {/* End Contact Form */}
         </div>
+
         <div className="col-md-6 d-flex align-items-stretch">
           {/* Google Map */}
-          <div className="map-boxed">
+          {/* <div className="map-boxed">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3071.5318265717196!2d-75.60465104752062!3d39.660249785873326!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c703f3cdadbfdb%3A0x80d20252268fc006!2zMjQ1IFF1aWdsZXkgQmx2ZCBzdGUgaywgTmV3IENhc3RsZSwgREUgMTk3MjAsINCh0L_QvtC70YPRh9C10L3RliDQqNGC0LDRgtC4INCQ0LzQtdGA0LjQutC4!5e0!3m2!1suk!2sua!4v1662469609333!5m2!1suk!2sua"
               width={600}
@@ -191,6 +191,14 @@ export default function Contact() {
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div> */}
+
+          <div className="map-boxed">
+            <img
+              className="custom-img"
+              src="/assets/images/afd/mpa.jpg"
+              alt="map"
             />
           </div>
           {/* End Google Map */}

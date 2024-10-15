@@ -44,7 +44,7 @@ const NIFTCoursePromo = () => {
                   fontSize: "23px",
                 }}
               >
-                Enquire Now
+                Join Now
               </button>
             </div>
           </div>

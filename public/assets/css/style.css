@@ -4346,7 +4346,9 @@ html:not(.mobile) .wow-p {
 
 
 /* custom stickymodal */
-
+.custom-img {
+  object-fit: contain;
+}
 
 .fixedcta {
   border-radius: 9px;
