@@ -48,7 +48,11 @@ export default function Hero1() {
               <div>
                 <h2
                   className="section-caption mb-30 mb-xs-10 wow fadeInUp"
-                  style={{ fontSize: "30px" }}
+                  style={{
+                    fontSize: "40px",
+                    textTransform: "none",
+                    fontWeight: "bold",
+                  }}
                   data-wow-duration="1.2s"
                 >
                   afdindia
