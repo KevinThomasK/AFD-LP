@@ -14,6 +14,7 @@ import Promo from "@/components/homes/home-1/Promo";
 import Service from "@/components/homes/home-1/Service";
 import Team from "@/components/homes/home-1/Team";
 import Testimonials from "@/components/homes/home-1/Testimonials";
+import CustomExamSection from "@/components/homes/home-1/CustomExamSection";
 import Link from "next/link";
 import Testimonials2 from "./Teatimonials2";
 import Brands2 from "./Brands2";
@@ -71,6 +72,35 @@ export default function Home1({ onePage = false, dark = false }) {
           </div>
         </div>
       </ParallaxContainer>
+      <section
+        className={`page-section  scrollSpysection  ${
+          dark ? "bg-dark-2 light-content" : "bg-gray-light-1 "
+        }`}
+        id="team"
+      >
+        <Team />
+      </section>
+
+      <CustomExamSection />
+
+      <section
+        className={`page-section  scrollSpysection  ${
+          dark ? "bg-dark-1 light-content" : ""
+        }`}
+        id="services"
+      >
+        {" "}
+        <Service />
+      </section>
+
+      <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
+      <section
+        className={`page-section  ${dark ? "bg-dark-1 light-content" : ""}`}
+      >
+        <Promo />{" "}
+      </section>
+      <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
+
       <section
         className={`page-section scrollSpysection ${
           dark ? "bg-dark-1 light-content" : ""
@@ -157,24 +187,17 @@ export default function Home1({ onePage = false, dark = false }) {
           <About />
         </div>
       </section>
-      <section
-        className={`page-section  scrollSpysection  ${
-          dark ? "bg-dark-2 light-content" : "bg-gray-light-1 "
-        }`}
-        id="team"
-      >
-        <Team />
-      </section>
-      <section
-        className={`page-section  scrollSpysection  ${
-          dark ? "bg-dark-1 light-content" : ""
-        }`}
-        id="services"
-      >
-        {" "}
-        <Service />
-      </section>
 
+      <section
+        className="page-section bg-dark bg-dark-alpha-70 light-content"
+        style={{
+          background: "#FFCD7B",
+          // backgroundImage:
+          //   "url(/assets/images/full-width-images/section-bg-4.jpg)",
+        }}
+      >
+        <Features />
+      </section>
       {/* <section
         className={`page-section  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""
@@ -191,6 +214,40 @@ export default function Home1({ onePage = false, dark = false }) {
       >
         <Benefits />
       </section> */}
+
+      <section
+        className={`page-section  scrollSpysection  ${
+          dark ? "bg-dark-1 light-content" : ""
+        }`}
+        id="blog"
+      >
+        <div className="container position-relative">
+          <div className="row mb-60 mb-xs-30">
+            <div className="col-md-6">
+              <h2 className="section-caption mb-xs-10">Our Blog</h2>
+              <h3 className="section-title mb-0">
+                <span className="wow charsAnimIn" data-splitting="chars">
+                  The latest news
+                </span>
+              </h3>
+            </div>
+            <div className="col-md-5 offset-md-1 text-start text-md-end pt-40 pt-sm-20">
+              <Link
+                href={`/main-blog-columns-2col`}
+                className="link-hover-anim underline align-middle"
+                data-link-animate="y"
+              >
+                Read more in our blog <i className="mi-arrow-right size-18" />
+              </Link>
+            </div>
+          </div>
+          <Blog />
+          {/* Blog Posts Grid */}
+
+          {/* End Blog Posts Grid */}
+        </div>
+      </section>
+
       <section
         className={`page-section pt-0 pb-0  ${dark ? "light-content" : ""}`}
       >
@@ -200,15 +257,7 @@ export default function Home1({ onePage = false, dark = false }) {
       {/* <section className={`page-section  ${dark ? " light-content" : ""}`}>
         {dark ? <Brands2 /> : <Brands />}
       </section> */}
-      <section
-        className="page-section bg-dark bg-dark-alpha-70 light-content"
-        style={{
-          backgroundImage:
-            "url(/assets/images/full-width-images/section-bg-4.jpg)",
-        }}
-      >
-        <Features />
-      </section>
+
       <section
         className={`page-section  ${dark ? "bg-dark-1 light-content" : ""}`}
       >
@@ -296,45 +345,6 @@ export default function Home1({ onePage = false, dark = false }) {
         </div>
       </section>
 
-      <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
-      <section
-        className={`page-section  ${dark ? "bg-dark-1 light-content" : ""}`}
-      >
-        <Promo />{" "}
-      </section>
-      <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
-      <section
-        className={`page-section  scrollSpysection  ${
-          dark ? "bg-dark-1 light-content" : ""
-        }`}
-        id="blog"
-      >
-        <div className="container position-relative">
-          <div className="row mb-60 mb-xs-30">
-            <div className="col-md-6">
-              <h2 className="section-caption mb-xs-10">Our Blog</h2>
-              <h3 className="section-title mb-0">
-                <span className="wow charsAnimIn" data-splitting="chars">
-                  The latest news
-                </span>
-              </h3>
-            </div>
-            <div className="col-md-5 offset-md-1 text-start text-md-end pt-40 pt-sm-20">
-              <Link
-                href={`/main-blog-columns-2col`}
-                className="link-hover-anim underline align-middle"
-                data-link-animate="y"
-              >
-                Read more in our blog <i className="mi-arrow-right size-18" />
-              </Link>
-            </div>
-          </div>
-          <Blog />
-          {/* Blog Posts Grid */}
-
-          {/* End Blog Posts Grid */}
-        </div>
-      </section>
       {/* <section
         className="page-section bg-dark-1 bg-dark-alpha-90 light-content"
         style={{

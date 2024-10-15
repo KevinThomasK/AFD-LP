@@ -31,7 +31,8 @@ export default function Promo() {
             <div className="row">
               <div className="col-lg-10">
                 <h2 className="section-title mb-60 mb-sm-30">
-                  Why Choose AFD India ?
+                  Why Choose <span style={{ color: "#D84315" }}>afdindia </span>
+                  ?
                 </h2>
               </div>
             </div>

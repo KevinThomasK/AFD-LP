@@ -53,26 +53,28 @@ export const featureItems2 = [
   {
     id: 4,
     className: "col-lg-6",
-    path: "M16 3.383l-.924-.383-7.297 17.617.924.383 7.297-17.617zm.287 3.617l6.153 4.825-6.173 5.175.678.737 7.055-5.912-7.048-5.578-.665.753zm-8.478 0l-6.249 4.825 6.003 5.175-.679.737-6.884-5.912 7.144-5.578.665.753z",
+    path: "M16 2l-1.2-.6L7.5 18.5l1.2.6L16 2zm.4 4.5l5.5 4.5-5.5 4.5.7.7 6.2-5.2L16.9 5.8l-.5.7zm-9.4 0L2 10.5l5.3 4.5-.7.7L.9 9.5 8 5.8l.5.7z",
     title: "Real-World Design Thinking",
     description:
       "AFD India’s curriculum extends beyond the classroom, incorporating practical projects and activities such as outdoor sketching and analyzing current events. This helps sharpen the student's design thinking and problem-solving abilities.",
   },
+
   {
     id: 5,
     className: "col-lg-6",
-    path: "M16 3.383l-.924-.383-7.297 17.617.924.383 7.297-17.617zm.287 3.617l6.153 4.825-6.173 5.175.678.737 7.055-5.912-7.048-5.578-.665.753zm-8.478 0l-6.249 4.825 6.003 5.175-.679.737-6.884-5.912 7.144-5.578.665.753z",
+    path: "M12 2L2 9l10 7 10-7L12 2zm0 1.5l8 5.5-8 5.5-8-5.5 8-5.5zm-1 2.5v6h2v-6h-2zM9 10h6v1H9v-1z",
     title: "Industry Insights",
     description:
       "Get inspired by the Best! Our workshops, led by experienced design professionals, offer our students industry insights, practical knowledge and a solid foundation for their design careers.",
   },
+
   {
     id: 6,
     className: "col-lg-6",
-    path: "M16 3.383l-.924-.383-7.297 17.617.924.383 7.297-17.617zm.287 3.617l6.153 4.825-6.173 5.175.678.737 7.055-5.912-7.048-5.578-.665.753zm-8.478 0l-6.249 4.825 6.003 5.175-.679.737-6.884-5.912 7.144-5.578.665.753z",
+    path: "M12 2L2 12h20L12 2zm0 2.1L18.8 12H5.2L12 4.1zM11 12v5h2v-5h-2zm0 6v2h2v-2h-2z",
     title: "Highest NIFT Results",
     description:
-      "AFD India consistently produces top NIFT results, with students achieving leading ranks in the entrance exams year after year. ",
+      "AFD India consistently produces top NIFT results, with students achieving leading ranks in the entrance exams year after year.",
   },
 ];
 

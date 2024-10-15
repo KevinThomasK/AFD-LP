@@ -15,7 +15,10 @@ export default function Team() {
             {/* <div className="blockquote-icon" aria-hidden="true">
               <FaBook style={{ fontSize: "28px", marginBottom: "50px" }} />
             </div> */}
-            <p>NIFT Entrance Courses From afdindia</p>
+            <p>
+              NIFT Entrance Courses From{" "}
+              <span style={{ color: "#D84315" }}>afdindia</span>
+            </p>
             <footer>
               {/* <div className="section-line mb-10" />
               Thomas Johnson
@@ -65,7 +68,7 @@ export default function Team() {
                           alt="Image Description"
                         />
                         <div className="team-item-detail">
-                          <div className="team-social-links">
+                          {/* <div className="team-social-links">
                             {member.socials.map((social, socialIndex) => (
                               <a
                                 href={social.url}
@@ -79,12 +82,22 @@ export default function Team() {
                                 <i className={social.icon} />
                               </a>
                             ))}
-                          </div>
+                          </div> */}
                         </div>
                       </div>
                       <div className="team-item-descr">
-                        <div className="team-item-name">{member.name}</div>
-                        <div className="team-item-role">{member.role}</div>
+                        <button
+                          className="btn"
+                          style={{
+                            backgroundColor: "black",
+                            color: "white",
+                            padding: "0.5rem 1.5rem",
+                            fontSize: "14px",
+                          }}
+                        >
+                          {member.name}
+                        </button>
+                        {/* <div className="team-item-role">{member.role}</div> */}
                       </div>
                     </div>
                   </div>

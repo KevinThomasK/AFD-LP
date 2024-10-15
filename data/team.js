@@ -1,6 +1,6 @@
 export const teamMembers = [
   {
-    name: "Thomas Johnson",
+    name: "Apply Now",
     role: "Developer, co-founder",
     image: "/assets/images/team/team-1.jpg",
     socials: [
@@ -10,7 +10,7 @@ export const teamMembers = [
     ],
   },
   {
-    name: "Emma Johnson",
+    name: "Apply Now",
     role: "UI/UX Designer, co-founder",
     image: "/assets/images/team/team-2.jpg",
     socials: [
@@ -20,7 +20,7 @@ export const teamMembers = [
     ],
   },
   {
-    name: "Marta Laning",
+    name: "Apply Now",
     role: "Web developer",
     image: "/assets/images/team/team-4.jpg",
     socials: [
@@ -30,7 +30,7 @@ export const teamMembers = [
     ],
   },
   {
-    name: "Marta Laning",
+    name: "Apply Now",
     role: "Art director, designer",
     image: "/assets/images/team/team-3.jpg",
     socials: [
