@@ -51,7 +51,7 @@ export default function Hero1() {
                   style={{ fontSize: "30px" }}
                   data-wow-duration="1.2s"
                 >
-                  AFDINDIA
+                  afdindia
                 </h2>
                 <h1 className="hs-title-1 mb-30">
                   <AnimatedText text={" No.1 NIFT Entrance Coaching Center"} />
@@ -62,8 +62,16 @@ export default function Hero1() {
                   data-wow-delay="0.6s"
                   data-wow-duration="1.2s"
                 >
-                  Embark on your Fashion Journey
+                  Embark on your Fashion Journey.
                 </p>
+                <h2
+                  className="wow fadeInUp"
+                  style={{ color: "#D84315" }}
+                  data-wow-delay="0.6s"
+                  data-wow-duration="1.2s"
+                >
+                  Be The Next AIR 1!
+                </h2>
                 <div
                   className="local-scroll mt-n10 wow fadeInUp wch-unset"
                   data-wow-delay="0.7s"
@@ -74,7 +82,7 @@ export default function Hero1() {
                     href="#about"
                     className="btn btn-mod btn-large btn-round btn-hover-anim align-middle me-2 me-sm-5 mt-10"
                   >
-                    <span>Join Now</span>
+                    <span>I Wish To Know More</span>
                   </a>
                 </div>
               </div>

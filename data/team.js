@@ -2,7 +2,7 @@ export const teamMembers = [
   {
     name: "Apply Now",
     role: "Developer, co-founder",
-    image: "/assets/images/team/team-1.jpg",
+    image: "/assets/images/afd/course1.jpg",
     socials: [
       { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
       { platform: "Twitter", icon: "fa-twitter", url: "#" },
@@ -12,7 +12,7 @@ export const teamMembers = [
   {
     name: "Apply Now",
     role: "UI/UX Designer, co-founder",
-    image: "/assets/images/team/team-2.jpg",
+    image: "/assets/images/afd/course2.jpg",
     socials: [
       { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
       { platform: "Twitter", icon: "fa-twitter", url: "#" },
@@ -22,7 +22,7 @@ export const teamMembers = [
   {
     name: "Apply Now",
     role: "Web developer",
-    image: "/assets/images/team/team-4.jpg",
+    image: "/assets/images/afd/course3.jpg",
     socials: [
       { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
       { platform: "Twitter", icon: "fa-twitter", url: "#" },
@@ -32,7 +32,27 @@ export const teamMembers = [
   {
     name: "Apply Now",
     role: "Art director, designer",
-    image: "/assets/images/team/team-3.jpg",
+    image: "/assets/images/afd/course4.jpg",
+    socials: [
+      { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
+      { platform: "Twitter", icon: "fa-twitter", url: "#" },
+      { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
+    ],
+  },
+  {
+    name: "Apply Now",
+    role: "Art director, designer",
+    image: "/assets/images/afd/course5.jpg",
+    socials: [
+      { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
+      { platform: "Twitter", icon: "fa-twitter", url: "#" },
+      { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
+    ],
+  },
+  {
+    name: "Apply Now",
+    role: "Art director, designer",
+    image: "/assets/images/afd/course6.jpg",
     socials: [
       { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
       { platform: "Twitter", icon: "fa-twitter", url: "#" },

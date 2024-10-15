@@ -4248,12 +4248,110 @@ html:not(.mobile) .wow-p {
  * Logo (in navigation panel)
  */
 
+/* custom modal for contact */
+.custom-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: transparent; */
+  /* Dark transparent background */
+  backdrop-filter: blur(10px);
+  /* Blur to create a glass-like effect */
+  z-index: 999;
+  /* Ensure it's above other content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+  /* For fade-in/fade-out effect */
+}
+
+/* Modal container (full-screen, centered) */
+.custom-modal-container {
+  width: 90vw;
+  max-width: 900px;
+  height: auto;
+  /* background-color: rgba(255, 255, 255, 0.9); */
+  background-color: white;
+  /* Slight transparency */
+  backdrop-filter: blur(8px);
+  /* Optional: slight blur effect */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow */
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+
+  /* Animation on open */
+}
+
+/* Modal header */
+.custom-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Modal title */
+.custom-modal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Close button */
+.custom-close-btn {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0.2s ease;
+}
+
+.custom-close-btn:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+/* Modal body */
+.custom-modal-body {
+
+  overflow-y: auto;
+  max-height: 80vh;
+  /* Scroll if content is too long */
+}
+
+/* Button to trigger modal */
+.open-modal-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.open-modal-btn:hover {
+  background-color: #0056b3;
+}
+
+/* custom modal for contact end */
+
+
 /* custom stickymodal */
 
 
 .fixedcta {
   border-radius: 9px;
   border: 1px solid rgba(0, 0, 0, 0.43);
+
   background: linear-gradient(91deg, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .5) 100.64%);
   backdrop-filter: blur(24px);
   padding: 6px;

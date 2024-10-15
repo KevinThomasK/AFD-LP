@@ -1,8 +1,10 @@
+"use client";
+import React, { useState } from "react";
 import AnimatedText from "@/components/common/AnimatedText";
 import About from "@/components/homes/home-1/About";
-import Benefits from "@/components/homes/home-1/Benefits";
+//import Benefits from "@/components/homes/home-1/Benefits";
 import Blog from "@/components/homes/home-1/Blog";
-import Brands from "@/components/homes/home-1/Brands";
+//import Brands from "@/components/homes/home-1/Brands";
 import Contact from "@/components/homes/home-1/Contact";
 
 import Facts from "@/components/homes/home-1/Facts";
@@ -18,9 +20,11 @@ import CustomExamSection from "@/components/homes/home-1/CustomExamSection";
 import CustomSection from "@/components/homes/home-1/CustomSection";
 import Link from "next/link";
 import Testimonials2 from "./Teatimonials2";
-import Brands2 from "./Brands2";
+//import Brands2 from "./Brands2";
 import dynamic from "next/dynamic";
 import Image from "next/image";
+import { ModalTrigger } from "@/components/Modal";
+
 const ParallaxContainer = dynamic(
   () => import("@/components/common/ParallaxContainer"),
   {
@@ -28,8 +32,18 @@ const ParallaxContainer = dynamic(
   }
 );
 export default function Home1({ onePage = false, dark = false }) {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
   return (
     <>
+      <ModalTrigger isOpen={isModalOpen} onClose={closeModal} />
       <ParallaxContainer
         className="page-section bg-dark-1 bg-dark-alpha-90 parallax-5 light-content"
         style={{
@@ -52,12 +66,12 @@ export default function Home1({ onePage = false, dark = false }) {
               </p> */}
               <div className="local-scroll wow fadeInUp" data-wow-delay="0.2s">
                 {onePage ? (
-                  <a
-                    href="#contact"
+                  <button
+                    onClick={openModal}
                     className="btn btn-mod btn-w btn-large btn-round btn-hover-anim"
                   >
                     <span>Contact Now</span>
-                  </a>
+                  </button>
                 ) : (
                   <Link
                     href={`/main-pages-contact-1${dark ? "-dark" : ""}`}
@@ -133,8 +147,8 @@ export default function Home1({ onePage = false, dark = false }) {
               {/* End Decorative Dots */}
 
               {onePage ? (
-                <a
-                  href="#team"
+                <button
+                  onClick={openModal}
                   className="link-hover-anim underline align-middle"
                   data-link-animate="y"
                 >
@@ -155,7 +169,7 @@ export default function Home1({ onePage = false, dark = false }) {
                       aria-hidden="true"
                     ></i>
                   </span>
-                </a>
+                </button>
               ) : (
                 <Link
                   href={`/main-pages-about-1${dark ? "-dark" : ""}`}
@@ -323,12 +337,12 @@ export default function Home1({ onePage = false, dark = false }) {
                 <Faq />
                 <div className="local-scroll">
                   {onePage ? (
-                    <a
-                      href="#contact"
+                    <button
+                      onClick={openModal}
                       className="btn btn-mod btn-large btn-round btn-hover-anim"
                     >
                       <span>Contact Us Now</span>
-                    </a>
+                    </button>
                   ) : (
                     <Link
                       href={`/main-pages-contact-1${dark ? "-dark" : ""}`}
