@@ -45,7 +45,7 @@ const StickyModal = () => {
             fill="#fff"
           ></path>
         </svg>
-        +91 9895484652
+        Call Now
       </a>
     </div>
   );

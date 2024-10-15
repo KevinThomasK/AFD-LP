@@ -14569,3 +14569,9 @@ html:not(.mobile) .owl-animate-fadeInDown {
 .works-grid.grid-intro-2 .work-item .work-descr {
   font-size: 16px;
 }
+
+@media (max-width: 650px) {
+  .mob-dis-none {
+    display: none;
+  }
+}
