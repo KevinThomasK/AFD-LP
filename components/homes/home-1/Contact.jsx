@@ -162,12 +162,12 @@ export default function Contact() {
               </div>
               <div className="col-lg-7">
                 {/* Inform Tip */}
-                <div className="form-tip pt-20 pt-sm-0 mt-sm-20">
+                {/* <div className="form-tip pt-20 pt-sm-0 mt-sm-20">
                   <i className="icon-info size-16" />
                   All the fields are required. By sending the form you agree to
                   the <a href="#">Terms &amp; Conditions</a> and{" "}
                   <a href="#">Privacy Policy</a>.
-                </div>
+                </div> */}
               </div>
             </div>
             <div

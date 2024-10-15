@@ -11,14 +11,16 @@ export default function Footer1({ dark = false }) {
         dark ? "bg-dark-2 light-content dark" : "bg-gray-light-1"
       }  pb-30`}
     >
-      <div className="container">
+      <div className="container" style={{ marginTop: "-80px" }}>
         {/* Footer Text */}
         <div className="row text-gray">
           <div className="col-md-4 col-lg-3">
-            <b>© afdindia {new Date().getFullYear()}.</b>
+            <b>Copyright © afdindia {new Date().getFullYear()}.</b>
           </div>
           <div className="col-md-7 offset-md-1 offset-lg-2 clearfix">
-            <b>Privacy Policy</b>
+            <a href="https://afdindia.com/page/privacy-policy" target="_blank">
+              Privacy Policy
+            </a>
             {/* Back to Top Link */}
             <div className="local-scroll float-end mt-n20 mt-sm-10">
               <a href="#top" className="link-to-top">
