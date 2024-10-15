@@ -75,7 +75,7 @@ export default function Promo() {
               <Image
                 width={633}
                 height={821}
-                src="/assets/images/promo-6.jpg"
+                src="/assets/images/afd/b2.jpg"
                 alt="Image Description"
                 className="wow scaleOutIn"
                 data-wow-duration="1.2s"
@@ -92,7 +92,7 @@ export default function Promo() {
                 <Image
                   width={386}
                   height={500}
-                  src="/assets/images/promo-7.jpg"
+                  src="/assets/images/afd/b3.jpg"
                   alt="Image Description"
                   className="wow scaleOutIn"
                   data-wow-duration="1.2s"

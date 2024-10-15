@@ -9,13 +9,13 @@ import ModalVideo from "react-modal-video";
 export default function Hero1() {
   // State variables for each image's source
   const [firstImageSrc, setFirstImageSrc] = useState(
-    "/assets/images/afd/one.jpg"
+    "/assets/images/afd/b1.jpg"
   );
   const [secondImageSrc, setSecondImageSrc] = useState(
-    "/assets/images/afd/two.jpg"
+    "/assets/images/afd/b3.jpg"
   );
   const [thirdImageSrc, setThirdImageSrc] = useState(
-    "/assets/images/afd/five.jpg"
+    "/assets/images/afd/b2.jpg"
   );
 
   useEffect(() => {

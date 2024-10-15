@@ -15,7 +15,11 @@ export default function Blog() {
         >
           <div className="post-prev-container">
             <div className="post-prev-img">
-              <Link href={`/main-blog-single-sidebar-right/${elm.id}`}>
+              <Link
+                href={`${elm.id}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Image
                   width={650}
                   height={412}
@@ -29,8 +33,8 @@ export default function Blog() {
                 {elm.title}
               </Link>
             </h4>
-            <div className="post-prev-text">{elm.text}</div>
-            <div className="post-prev-info clearfix">
+            {/* <div className="post-prev-text">{elm.text}</div> */}
+            {/* <div className="post-prev-info clearfix">
               <div className="float-start">
                 <a href="#">
                   <Image
@@ -46,7 +50,7 @@ export default function Blog() {
               <div className="float-end">
                 <a href="#">{elm.date}</a>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       ))}

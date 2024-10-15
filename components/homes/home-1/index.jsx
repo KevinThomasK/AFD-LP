@@ -32,8 +32,7 @@ export default function Home1({ onePage = false, dark = false }) {
       <ParallaxContainer
         className="page-section bg-dark-1 bg-dark-alpha-90 parallax-5 light-content"
         style={{
-          backgroundImage:
-            "url(/assets/images/full-width-images/section-bg-2.jpg)",
+          backgroundImage: "url(/assets/images/afd/mainbanner.jpg)",
         }}
       >
         <div className="container position-relative">
@@ -224,14 +223,14 @@ export default function Home1({ onePage = false, dark = false }) {
         <div className="container position-relative">
           <div className="row mb-60 mb-xs-30">
             <div className="col-md-6">
-              <h2 className="section-caption mb-xs-10">Our Blog</h2>
+              {/* <h2 className="section-caption mb-xs-10">Our Blog</h2> */}
               <h3 className="section-title mb-0">
                 <span className="wow charsAnimIn" data-splitting="chars">
-                  The latest news
+                  Video Testimonials
                 </span>
               </h3>
             </div>
-            <div className="col-md-5 offset-md-1 text-start text-md-end pt-40 pt-sm-20">
+            {/* <div className="col-md-5 offset-md-1 text-start text-md-end pt-40 pt-sm-20">
               <Link
                 href={`/main-blog-columns-2col`}
                 className="link-hover-anim underline align-middle"
@@ -239,7 +238,7 @@ export default function Home1({ onePage = false, dark = false }) {
               >
                 Read more in our blog <i className="mi-arrow-right size-18" />
               </Link>
-            </div>
+            </div> */}
           </div>
           <Blog />
           {/* Blog Posts Grid */}

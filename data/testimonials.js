@@ -1,21 +1,34 @@
 export const testimonials = [
   {
-    quote: `This template is so beautiful and has such wonderful new options. It is updated often which gives me even more quality. The support is one of the absolute best I've ever had the pleasure of interacting with. Quick, courteous, and extremely helpful!`,
-    author: "Adam Peterson",
-    role: "Business Owner",
-    image: "/assets/images/ts1-user.jpg",
+    quote: `To prepare for the NIFT entrance, I attended the Creative Ability Test summer workshop & the week-long Situation Test workshop in Delhi. The experience was amazing, the faculty is brilliant. The support I got was of great help. The atmosphere in the classes is very friendly. I owe a great deal to afdindia for my success. I take this opportunity to thank Ms. Julie James & all faculties for their help`,
+    author: "Madhavi Singh",
+    role: "All India Rank 1 (afd Weekend batch 2010)",
+    image: "/assets/images/afd/test1.png",
+  },
+
+  {
+    quote: `Afdindia has helped me to achieve the first steps towards my dream… No matter how much you think you cant, they will make it a point to see you try. This is a great place where you can find your inert talents and find good people that will be with you for times to come. Thankful to all members of afdindia team.`,
+    author: "Jwala K Sukumaran",
+    role: "All India rank 1 (afd regular batch 2019)",
+    image: "/assets/images/afd/test3.jpg",
   },
   {
-    quote: `This template is so beautiful and has such wonderful new options. It is updated often which gives me even more quality. The support is one of the absolute best I've ever had the pleasure of interacting with. Quick, courteous, and extremely helpful!`,
-    author: "Adam Peterson",
-    role: "Business Owner",
-    image: "/assets/images/ts1-user.jpg",
+    quote: `It gives me great pleasure to say with pride that I did my nid & nift coaching at afdindia. The relationship between the faculties and student was very cordial, which gave me an opportunity to excel in my area of interest. The 8 months I spend here was the golden days of my life which improved all the design aspects in me. I thank all my faculties & coordinators who are the main reason behind my success.`,
+    author: "Arun Job Pynadath",
+    role: "All India Rank 1 (afd regular batch 2018)",
+    image: "/assets/images/afd/test4.png",
   },
   {
-    quote: `This template is so beautiful and has such wonderful new options. It is updated often which gives me even more quality. The support is one of the absolute best I've ever had the pleasure of interacting with. Quick, courteous, and extremely helpful!`,
-    author: "Adam Peterson",
-    role: "Business Owner",
-    image: "/assets/images/ts1-user.jpg",
+    quote: `Thank you afdindia for guiding me and polishing my skills. To my surprise, I obtained AIR 1 in both new media and interactive design`,
+    author: "C S Jasweth",
+    role: "All India Rank 1 (afd regular batch 2020)",
+    image: "/assets/images/afd/test2.png",
+  },
+  {
+    quote: `I dedicated one year after class 12th to afd regular program. My interactions with peers and faculties in classes have fine tuned my ideas and helped me in achieving my NID dream. My mentors at afdindia guided me in the right path`,
+    author: "Sreehari S",
+    role: "All India Rank 1 (afd regular batch 2017)",
+    image: "/assets/images/afd/test5.png",
   },
 ];
 

@@ -11,7 +11,7 @@ export default function About() {
             <Image
               width={960}
               height={539}
-              src="/assets/images/afd/four.jpg"
+              src="/assets/images/afd/about.jpg"
               className="image-fullwidth relative"
               alt="Image Description"
             />

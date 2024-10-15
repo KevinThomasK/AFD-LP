@@ -132,7 +132,7 @@ export default function Service() {
                 width={945}
                 height={1016}
                 className="services-image"
-                src="/assets/images/services/service-1.jpg"
+                src="/assets/images/afd/nift1.jpg"
                 alt="Image Description"
               />
             </div>
@@ -159,7 +159,7 @@ export default function Service() {
                 width={945}
                 height={1016}
                 className="services-image"
-                src="/assets/images/services/service-2.jpg"
+                src="/assets/images/afd/nift2.jpg"
                 alt="Image Description"
               />
             </div>
@@ -191,7 +191,7 @@ export default function Service() {
                 width={945}
                 height={1016}
                 className="services-image"
-                src="/assets/images/services/service-3.jpg"
+                src="/assets/images/afd/nift3.jpg"
                 alt="Image Description"
               />
             </div>
@@ -217,7 +217,7 @@ export default function Service() {
                 width={945}
                 height={1016}
                 className="services-image"
-                src="/assets/images/services/service-4.jpg"
+                src="/assets/images/afd/nift4.jpg"
                 alt="Image Description"
               />
             </div>
@@ -242,7 +242,7 @@ export default function Service() {
                 width={945}
                 height={1016}
                 className="services-image"
-                src="/assets/images/services/service-5.jpg"
+                src="/assets/images/afd/nift5.jpg"
                 alt="Image Description"
               />
             </div>
