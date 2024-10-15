@@ -274,7 +274,7 @@ export default function Home1({ onePage = false, dark = false }) {
                   <Image
                     width={386}
                     height={400}
-                    src="/assets/images/promo-3.jpg"
+                    src="/assets/images/afd/faq1.png"
                     alt="Image Description"
                     className="wow scaleOutIn"
                     data-wow-duration="1.2s"
@@ -285,14 +285,14 @@ export default function Home1({ onePage = false, dark = false }) {
                   <Image
                     width={810}
                     height={512}
-                    src="/assets/images/promo-4.jpg"
+                    src="/assets/images/afd/FAQ.jpg"
                     alt="Image Description"
                     className="wow scaleOutIn"
                     data-wow-duration="1.2s"
                     data-wow-offset={134}
                   />
                 </div>
-                <div
+                {/* <div
                   className="call-action-2-image-3"
                   data-rellax-y=""
                   data-rellax-speed="-0.5"
@@ -301,13 +301,13 @@ export default function Home1({ onePage = false, dark = false }) {
                   <Image
                     width={386}
                     height={500}
-                    src="/assets/images/promo-5.jpg"
+                    src="/assets/images/afd/faq2.png"
                     alt="Image Description"
                     className="wow scaleOutIn"
                     data-wow-duration="1.2s"
                     data-wow-offset={0}
                   />
-                </div>
+                </div> */}
               </div>
             </div>
             {/* End Images */}
@@ -326,14 +326,14 @@ export default function Home1({ onePage = false, dark = false }) {
                       href="#contact"
                       className="btn btn-mod btn-large btn-round btn-hover-anim"
                     >
-                      <span>Start a Project</span>
+                      <span>Contact Us Now</span>
                     </a>
                   ) : (
                     <Link
                       href={`/main-pages-contact-1${dark ? "-dark" : ""}`}
                       className="btn btn-mod btn-large btn-round btn-hover-anim"
                     >
-                      <span>Start a Project</span>
+                      <span>Contact Us Now</span>
                     </Link>
                   )}
                 </div>
@@ -353,6 +353,7 @@ export default function Home1({ onePage = false, dark = false }) {
       >
         <NewsLetter />
       </section> */}
+      <CustomExamSection />
       <section
         className={`page-section  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""
