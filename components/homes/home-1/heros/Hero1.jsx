@@ -7,8 +7,15 @@ import { useEffect, useState } from "react";
 import ModalVideo from "react-modal-video";
 
 export default function Hero1() {
+  // State variables for each image's source
   const [firstImageSrc, setFirstImageSrc] = useState(
     "/assets/images/afd/one.jpg"
+  );
+  const [secondImageSrc, setSecondImageSrc] = useState(
+    "/assets/images/afd/two.jpg"
+  );
+  const [thirdImageSrc, setThirdImageSrc] = useState(
+    "/assets/images/afd/five.jpg"
   );
 
   useEffect(() => {
@@ -17,9 +24,17 @@ export default function Hero1() {
 
   const [isOpen, setOpen] = useState(false);
 
-  // Function to handle image click
-  const handleImageClick = (newSrc) => {
-    setFirstImageSrc(newSrc); // Update the first image's src
+  // Function to handle second image click (swap second with first)
+  const handleSecondImageClick = () => {
+    //setFirstImageSrc(secondImageSrc);
+    setThirdImageSrc(secondImageSrc);
+    setSecondImageSrc(thirdImageSrc); // Set first image as second
+  };
+
+  // Function to handle third image click (swap third with first)
+  const handleThirdImageClick = () => {
+    setFirstImageSrc(thirdImageSrc); // Set third image as first
+    setThirdImageSrc(firstImageSrc); // Set first image as third
   };
 
   return (
@@ -33,7 +48,7 @@ export default function Hero1() {
               <div>
                 <h2
                   className="section-caption mb-30 mb-xs-10 wow fadeInUp"
-                  style={{ color: "black", fontSize: "30px" }}
+                  style={{ fontSize: "30px" }}
                   data-wow-duration="1.2s"
                 >
                   AFDINDIA
@@ -72,6 +87,7 @@ export default function Hero1() {
                 <div
                   className="stack-images-1 parallax-mousemove"
                   data-offset={30}
+                  onClick={handleThirdImageClick} // Set this image as first image on click
                 >
                   <div
                     className="wow clipRightIn"
@@ -90,7 +106,7 @@ export default function Hero1() {
                 <div
                   className="stack-images-2 parallax-mousemove"
                   data-offset={60}
-                  onClick={() => handleImageClick("/assets/images/afd/two.jpg")} // Set this image as first image on click
+                  onClick={handleSecondImageClick} // Set this image as first image on click
                 >
                   <div
                     className="wow clipRightIn"
@@ -100,7 +116,7 @@ export default function Hero1() {
                     <Image
                       width={600}
                       height={800}
-                      src="/assets/images/afd/two.jpg"
+                      src={secondImageSrc}
                       alt="Image Description"
                     />
                   </div>
@@ -109,9 +125,6 @@ export default function Hero1() {
                 <div
                   className="stack-images-3 parallax-mousemove"
                   data-offset={90}
-                  onClick={() =>
-                    handleImageClick("/assets/images/afd/five.jpg")
-                  } // Set this image as first image on click
                 >
                   <div
                     className="wow clipRightIn"
@@ -121,7 +134,7 @@ export default function Hero1() {
                     <Image
                       width={600}
                       height={800}
-                      src="/assets/images/afd/five.jpg"
+                      src={thirdImageSrc}
                       alt="Image Description"
                     />
                   </div>
