@@ -4327,6 +4327,84 @@ html:not(.mobile) .wow-p {
 /* custom modal for contact end */
 
 
+/* unique modal style start */
+/* Modal backdrop */
+.unique-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Slightly darker background */
+  backdrop-filter: blur(10px);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+/* Modal container */
+.unique-modal-container {
+  width: 80vw;
+  /* Adjusted width */
+  max-width: 600px;
+  /* Maximum size to avoid being too large */
+  height: auto;
+  background-color: #fff;
+  border-radius: 8px;
+  /* Slightly less rounding */
+  overflow: hidden;
+  box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.3);
+  /* More pronounced shadow */
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+/* Modal header */
+.unique-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  /* More padding */
+  background-color: #f8f9fa;
+  /* Light background for the header */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Close button */
+.unique-close-btn {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0.2s ease;
+}
+
+.unique-close-btn:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+/* Modal body */
+.unique-modal-body {
+  padding: 1.5rem;
+  /* Increased padding */
+  overflow-y: auto;
+  max-height: 70vh;
+  /* Keep content scrollable but contained */
+}
+
+/* Disable body scroll when modal is open */
+.no-scroll {
+  overflow: hidden;
+}
+
+/* unique modal style end */
+
+
 /* custom stickymodal */
 .custom-img {
   object-fit: contain;
@@ -14685,5 +14763,11 @@ html:not(.mobile) .owl-animate-fadeInDown {
     margin-left: 8px;
     width: 140px;
 
+  }
+
+  .unique-modal-body {
+    padding: 0;
+
+    /* Keep content scrollable but contained */
   }
 }

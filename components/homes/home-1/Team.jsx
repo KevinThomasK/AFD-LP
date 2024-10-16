@@ -47,6 +47,7 @@ export default function Team() {
               <Swiper
                 spaceBetween={0}
                 slidesPerView={2}
+                loop
                 breakpoints={{
                   500: {
                     slidesPerView: 2, // When window width is <= 480px

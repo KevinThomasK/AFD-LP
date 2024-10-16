@@ -18,27 +18,26 @@ const FullScreenModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null; // Don't render the modal if it's not open
 
   return (
-    <div
-      className="custom-modal-backdrop"
-      style={{ marginTop: "45px" }}
-      onClick={onClose}
-    >
+    <div className="unique-modal-backdrop" onClick={onClose}>
       <div
-        className="custom-modal-container"
+        className="unique-modal-container"
         onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside the modal content
       >
-        <div className="custom-modal-content">
-          <div className="custom-modal-header d-flex justify-content-end">
+        <div className="unique-modal-content">
+          <div
+            className="unique-modal-header d-flex justify-content-end"
+            style={{ maxHeight: "30px" }}
+          >
             <button
               type="button"
-              className="custom-close-btn"
+              className="unique-close-btn"
               aria-label="Close"
               onClick={onClose}
             >
               &times;
             </button>
           </div>
-          <div className="custom-modal-body">
+          <div className="unique-modal-body">
             <ContactForm />
           </div>
         </div>

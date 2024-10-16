@@ -83,20 +83,20 @@ const ContactForm = () => {
   //   };
 
   return (
-    <div className="container my-5">
+    <div className="container my-1">
       <div className="contact-form rounded bg-white">
-        <h2 className="text-center mb-4">
+        {/* <h2 className="text-center mb-4">
           Turn Your Fashion Dreams into Reality!
-        </h2>
+        </h2> */}
         <h3
           className="text-center"
           style={{
-            marginBottom: "50px",
+            marginBottom: "10px",
             color: "#555555",
             fontSize: "25px",
           }}
         >
-          Apply Now
+          Get A Call Back
         </h3>
         <form onSubmit={(e) => e.preventDefault()}>
           {/* Name - Full Width */}
@@ -155,7 +155,7 @@ const ContactForm = () => {
               placeholder="Enter your message"
               value={formData.message}
               onChange={handleInputChange}
-              style={{ height: "130px" }}
+              style={{ height: "70px" }}
             />
           </div>
 
