@@ -220,7 +220,14 @@ export default function Home1({ onePage = false, dark = false }) {
           <About />
         </div>
       </section>
-
+      <div className="row mb-60 mb-xs-30" style={{ textAlign: "center" }}>
+        <div className="col-md-6">
+          {/* <h2 className="section-caption mb-xs-10">Our Story</h2> */}
+          <h3 className="section-title mb-0" style={{ fontSize: "20px" }}>
+            <AnimatedText text="Congrats To Our 2024 Batch" />
+          </h3>
+        </div>
+      </div>
       <section
         className="page-section bg-dark bg-dark-alpha-70 light-content"
         style={{

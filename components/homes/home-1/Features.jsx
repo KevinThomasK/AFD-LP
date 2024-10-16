@@ -55,11 +55,11 @@ export default function Features() {
                   <div className="features-icon">
                     <img
                       style={{ height: "200px", width: "190px" }}
-                      src="/assets/images/afd/nandita.png"
+                      src="/assets/images/afd/Aamiya.png"
                       alt="logo"
                     />
                   </div>
-                  <div className="features-title">Nanditha Rajeev</div>
+                  <div className="features-title">Aamiya</div>
                   <div className="features-descr">
                     Class aptent taciti sociosqu ad litora torquent per conubia
                     nostra, per inceptos himenaeos.
@@ -71,11 +71,11 @@ export default function Features() {
                   <div className="features-icon">
                     <img
                       style={{ height: "200px", width: "190px" }}
-                      src="/assets/images/afd/annapoorna.jpg"
+                      src="/assets/images/afd/Ajanya.png"
                       alt="logo"
                     />
                   </div>
-                  <div className="features-title">Annapoorna</div>
+                  <div className="features-title">Ajanya</div>
                   <div className="features-descr">
                     Class aptent taciti sociosqu ad litora torquent per conubia
                     nostra, per inceptos himenaeos.
@@ -87,11 +87,11 @@ export default function Features() {
                   <div className="features-icon">
                     <img
                       style={{ height: "200px", width: "190px" }}
-                      src="/assets/images/afd/sidharth.jpg"
+                      src="/assets/images/afd/ajay.png"
                       alt="logo"
                     />
                   </div>
-                  <div className="features-title">Sidharth Saseedaran</div>
+                  <div className="features-title">Ajay Rajeev</div>
                   <div className="features-descr">
                     Class aptent taciti sociosqu ad litora torquent per conubia
                     nostra, per inceptos himenaeos.
@@ -102,12 +102,12 @@ export default function Features() {
                 <div className="features-item">
                   <div className="features-icon">
                     <img
-                      src="/assets/images/afd/noble.jpg"
+                      src="/assets/images/afd/amarjith.png"
                       style={{ height: "200px", width: "190px" }}
                       alt="logo"
                     />
                   </div>
-                  <div className="features-title">Noble Thomas</div>
+                  <div className="features-title">Amarjith</div>
                   <div className="features-descr">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Quisque congue rhoncus enim, in pharetra lacus.
@@ -119,14 +119,30 @@ export default function Features() {
                   <div className="features-icon">
                     <img
                       style={{ height: "200px", width: "190px" }}
-                      src="/assets/images/afd/geethika.png"
+                      src="/assets/images/afd/anju.jpeg"
                       alt="logo"
                     />
                   </div>
-                  <div className="features-title">Geethika Jishekal</div>
+                  <div className="features-title">Anju Srinivasan</div>
                   <div className="features-descr">
                     Mauris a libero et diam sodales semper. Aenean elit leo,
                     hendrerit nec dolor id, rutrum finibus velit.
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="owl-item">
+                <div className="features-item">
+                  <div className="features-icon">
+                    <img
+                      style={{ height: "200px", width: "190px" }}
+                      src="/assets/images/afd/rosarene.jpeg"
+                      alt="logo"
+                    />
+                  </div>
+                  <div className="features-title">Rosarene</div>
+                  <div className="features-descr">
+                    Class aptent taciti sociosqu ad litora torquent per conubia
+                    nostra, per inceptos himenaeos.
                   </div>
                 </div>
               </SwiperSlide>
@@ -139,39 +155,7 @@ export default function Features() {
                       alt="logo"
                     />
                   </div>
-                  <div className="features-title">Rasha C</div>
-                  <div className="features-descr">
-                    Class aptent taciti sociosqu ad litora torquent per conubia
-                    nostra, per inceptos himenaeos.
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="owl-item">
-                <div className="features-item">
-                  <div className="features-icon">
-                    <img
-                      style={{ height: "200px", width: "190px" }}
-                      src="/assets/images/afd/udhay.jpg"
-                      alt="logo"
-                    />
-                  </div>
-                  <div className="features-title">Udhay K U</div>
-                  <div className="features-descr">
-                    Class aptent taciti sociosqu ad litora torquent per conubia
-                    nostra, per inceptos himenaeos.
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="owl-item">
-                <div className="features-item">
-                  <div className="features-icon">
-                    <img
-                      style={{ height: "200px", width: "190px" }}
-                      src="/assets/images/afd/prat.jpg"
-                      alt="logo"
-                    />
-                  </div>
-                  <div className="features-title">Pratyusha P</div>
+                  <div className="features-title">Rasha</div>
                   <div className="features-descr">
                     Class aptent taciti sociosqu ad litora torquent per conubia
                     nostra, per inceptos himenaeos.
