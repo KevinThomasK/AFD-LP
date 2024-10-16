@@ -4353,14 +4353,15 @@ html:not(.mobile) .wow-p {
 .fixedcta {
   border-radius: 9px;
   border: 1px solid rgba(0, 0, 0, 0.43);
+  background: linear-gradient(91deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100.64%);
 
-  background: linear-gradient(91deg, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .5) 100.64%);
+  /* background: linear-gradient(91deg, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .5) 100.64%); */
   backdrop-filter: blur(24px);
   padding: 6px;
   position: fixed;
   left: 50%;
   transform: translate(-50%, 0);
-  bottom: 20px;
+  bottom: 10px;
   z-index: 10;
 }
 
@@ -4392,8 +4393,22 @@ html:not(.mobile) .wow-p {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding: 8px 20px;
+  padding: 12px 20px;
   width: 180px;
+  text-align: center;
+}
+
+.fixedcta .btnn {
+  border-radius: 7px;
+
+  backdrop-filter: blur(7.199999809265137px);
+  color: var(--icon-color, #FFF);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  width: 50px;
   text-align: center;
 }
 
@@ -4411,7 +4426,7 @@ html:not(.mobile) .wow-p {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding: 7px 20px;
+  padding: 12px 20px;
   margin-left: 11px;
   width: 180px;
   text-align: center;
@@ -14673,5 +14688,20 @@ html:not(.mobile) .owl-animate-fadeInDown {
 @media (max-width: 650px) {
   .mob-dis-none {
     display: none;
+  }
+
+  .fixedcta .btn {
+
+    padding: 8px 10px;
+    width: 140px;
+
+  }
+
+  .fixedcta .btn_black {
+
+    padding: 7px 10px;
+    margin-left: 8px;
+    width: 140px;
+
   }
 }

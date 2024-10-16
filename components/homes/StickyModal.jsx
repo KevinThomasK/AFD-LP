@@ -1,7 +1,17 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { ModalTrigger } from "@/components/Modal";
 
 const StickyModal = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
   const [isVisible, setIsVisible] = useState(false);
 
   // Function to handle scroll event
@@ -27,13 +37,34 @@ const StickyModal = () => {
   return (
     isVisible && (
       <>
+        <ModalTrigger isOpen={isModalOpen} onClose={closeModal} />
         <div class="fixedcta d-flex align-content-center justify-content-between">
-          <h5 class="mob-dis-none">Enquire Now for Exclusive offers</h5>
+          {/* <h5 class="mob-dis-none">Enquire Now for Exclusive offers</h5> */}
+          <button
+            class="btn d-flex align-items-center justify-content-center"
+            style={{ backgroundColor: "#000000", marginRight: "8px" }}
+            onClick={openModal}
+          >
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 13h-4v4h-2v-4H7v-2h4V9h2v4h4v2z"
+                fill="white"
+              />
+            </svg>
+            Enquire Now
+          </button>
 
           <a
-            class="btn d-flex align-items-center justify-content-center"
+            class="btnn d-flex align-items-center justify-content-center"
             style={{ backgroundColor: "green" }}
-            href="#contactsec"
+            href="https://wa.me/+919895484652"
+            target="_blank"
           >
             <svg
               width="18"
@@ -53,7 +84,6 @@ const StickyModal = () => {
                 fill="white"
               ></path>
             </svg>
-            Whatsapp Now
           </a>
           <a
             class="btn_black d-flex align-items-center justify-content-center"
