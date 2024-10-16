@@ -231,7 +231,7 @@ export default function Features() {
                   <div className="features-icon">
                     <img
                       style={{ height: "200px", width: "190px" }}
-                      src="/assets/images/afd/Siddarth.jpeg"
+                      src="/assets/images/afd/siddarth.jpeg"
                       alt="logo"
                     />
                   </div>
@@ -263,7 +263,7 @@ export default function Features() {
                   <div className="features-icon">
                     <img
                       style={{ height: "200px", width: "190px" }}
-                      src="/assets/images/afd/sreeram.jpg"
+                      src="/assets/images/afd/Sreeram.jpg"
                       alt="logo"
                     />
                   </div>
