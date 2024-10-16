@@ -6,7 +6,11 @@ const FullScreenModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null; // Don't render the modal if it's not open
 
   return (
-    <div className="custom-modal-backdrop" onClick={onClose}>
+    <div
+      className="custom-modal-backdrop"
+      style={{ marginTop: "70px" }}
+      onClick={onClose}
+    >
       <div
         className="custom-modal-container"
         onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside the modal content
