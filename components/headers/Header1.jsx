@@ -50,7 +50,7 @@ export default function Header1({ links }) {
           {/* <LanguageSelect /> */}
           {/* End Languages */}
           <li>
-            <a href="#contact" className="opacity-1 no-hover">
+            <a href="tel:+919895484652" className="opacity-1 no-hover">
               <span className="link-hover-anim underline d-flex align-items-center">
                 <CiMobile3 className="me-2" style={{ fontSize: "24px" }} />{" "}
                 9895484652

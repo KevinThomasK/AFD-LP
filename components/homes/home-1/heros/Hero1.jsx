@@ -83,7 +83,7 @@ export default function Hero1() {
                   data-wow-offset={0}
                 >
                   <a
-                    href="#about"
+                    href="#contact"
                     className="btn btn-mod btn-large btn-round btn-hover-anim align-middle me-2 me-sm-5 mt-10"
                   >
                     <span>I Wish To Know More</span>

@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AnimatedText from "@/components/common/AnimatedText";
 import About from "@/components/homes/home-1/About";
 //import Benefits from "@/components/homes/home-1/Benefits";
@@ -33,6 +33,7 @@ const ParallaxContainer = dynamic(
 );
 export default function Home1({ onePage = false, dark = false }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [initialTimeout, setInitialTimeout] = useState(true);
 
   const closeModal = () => {
     setIsModalOpen(false);
@@ -41,6 +42,24 @@ export default function Home1({ onePage = false, dark = false }) {
   const openModal = () => {
     setIsModalOpen(true);
   };
+
+  useEffect(() => {
+    if (initialTimeout) {
+      const initialTimer = setTimeout(() => {
+        setIsModalOpen(true); // Open the modal after 5 seconds
+        setInitialTimeout(false); // Set flag to false after the first open
+      }, 5000); // 5 seconds
+
+      return () => clearTimeout(initialTimer); // Cleanup
+    } else {
+      const interval = setInterval(() => {
+        setIsModalOpen(true); // Open the modal every 30 seconds
+      }, 30000); // 30 seconds
+
+      return () => clearInterval(interval); // Cleanup
+    }
+  }, [initialTimeout]);
+
   return (
     <>
       <ModalTrigger isOpen={isModalOpen} onClose={closeModal} />
