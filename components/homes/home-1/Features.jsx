@@ -11,13 +11,13 @@ export default function Features() {
             spaceBetween={0}
             breakpoints={{
               1199: {
-                slidesPerView: 3, // When window width is <= 1199px
+                slidesPerView: 4, // When window width is <= 1199px
               },
               768: {
-                slidesPerView: 2, // When window width is <= 768px
+                slidesPerView: 3, // When window width is <= 768px
               },
               480: {
-                slidesPerView: 1, // When window width is <= 480px
+                slidesPerView: 2, // When window width is <= 480px
               },
               200: {
                 slidesPerView: 1, // When window width is <= 200px
@@ -61,8 +61,8 @@ export default function Features() {
                   </div>
                   <div className="features-title">Aamiya</div>
                   <div className="features-descr">
-                    Class aptent taciti sociosqu ad litora torquent per conubia
-                    nostra, per inceptos himenaeos.
+                    <h4 style={{ fontSize: "15px" }}>Leather Design </h4>
+                    <h4 style={{ fontSize: "13px" }}>NIFT Delhi </h4>
                   </div>
                 </div>
               </SwiperSlide>{" "}
@@ -77,40 +77,8 @@ export default function Features() {
                   </div>
                   <div className="features-title">Ajanya</div>
                   <div className="features-descr">
-                    Class aptent taciti sociosqu ad litora torquent per conubia
-                    nostra, per inceptos himenaeos.
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="owl-item">
-                <div className="features-item">
-                  <div className="features-icon">
-                    <img
-                      style={{ height: "200px", width: "190px" }}
-                      src="/assets/images/afd/ajay.png"
-                      alt="logo"
-                    />
-                  </div>
-                  <div className="features-title">Ajay Rajeev</div>
-                  <div className="features-descr">
-                    Class aptent taciti sociosqu ad litora torquent per conubia
-                    nostra, per inceptos himenaeos.
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="owl-item">
-                <div className="features-item">
-                  <div className="features-icon">
-                    <img
-                      src="/assets/images/afd/amarjith.png"
-                      style={{ height: "200px", width: "190px" }}
-                      alt="logo"
-                    />
-                  </div>
-                  <div className="features-title">Amarjith</div>
-                  <div className="features-descr">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Quisque congue rhoncus enim, in pharetra lacus.
+                    <h4 style={{ fontSize: "15px" }}>Leather Design </h4>
+                    <h4 style={{ fontSize: "13px" }}>NIFT Chennai </h4>
                   </div>
                 </div>
               </SwiperSlide>
@@ -125,8 +93,8 @@ export default function Features() {
                   </div>
                   <div className="features-title">Anju Srinivasan</div>
                   <div className="features-descr">
-                    Mauris a libero et diam sodales semper. Aenean elit leo,
-                    hendrerit nec dolor id, rutrum finibus velit.
+                    <h4 style={{ fontSize: "15px" }}>Fashion Design </h4>
+                    <h4 style={{ fontSize: "13px" }}>NIFT Chennai </h4>
                   </div>
                 </div>
               </SwiperSlide>
@@ -139,10 +107,10 @@ export default function Features() {
                       alt="logo"
                     />
                   </div>
-                  <div className="features-title">Rosarene</div>
+                  <div className="features-title">Rosarene Joby</div>
                   <div className="features-descr">
-                    Class aptent taciti sociosqu ad litora torquent per conubia
-                    nostra, per inceptos himenaeos.
+                    <h4 style={{ fontSize: "15px" }}>Accessory Design </h4>
+                    <h4 style={{ fontSize: "13px" }}>NIFT Hyderabad </h4>
                   </div>
                 </div>
               </SwiperSlide>
@@ -155,10 +123,154 @@ export default function Features() {
                       alt="logo"
                     />
                   </div>
-                  <div className="features-title">Rasha</div>
+                  <div className="features-title">Rasha C</div>
                   <div className="features-descr">
-                    Class aptent taciti sociosqu ad litora torquent per conubia
-                    nostra, per inceptos himenaeos.
+                    <h4 style={{ fontSize: "15px" }}>Fashion Design </h4>
+                    <h4 style={{ fontSize: "13px" }}>NIFT Delhi </h4>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="owl-item">
+                <div className="features-item">
+                  <div className="features-icon">
+                    <img
+                      style={{ height: "200px", width: "190px" }}
+                      src="/assets/images/afd/Gayathri.jpg"
+                      alt="logo"
+                    />
+                  </div>
+                  <div className="features-title">Gayathri Sanjay</div>
+                  <div className="features-descr">
+                    <h4 style={{ fontSize: "15px" }}>Fashion Design </h4>
+                    <h4 style={{ fontSize: "13px" }}>NIFT Bangalore </h4>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="owl-item">
+                <div className="features-item">
+                  <div className="features-icon">
+                    <img
+                      style={{ height: "200px", width: "190px" }}
+                      src="/assets/images/afd/Geethanjali.jpeg"
+                      alt="logo"
+                    />
+                  </div>
+                  <div className="features-title">Geethanjali V K</div>
+                  <div className="features-descr">
+                    <h4 style={{ fontSize: "15px" }}>Textile Design </h4>
+                    <h4 style={{ fontSize: "13px" }}>NIFT Chennai </h4>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="owl-item">
+                <div className="features-item">
+                  <div className="features-icon">
+                    <img
+                      style={{ height: "200px", width: "190px" }}
+                      src="/assets/images/afd/issa.png"
+                      alt="logo"
+                    />
+                  </div>
+                  <div className="features-title">Issa Mariyam</div>
+                  <div className="features-descr">
+                    <h4 style={{ fontSize: "15px" }}>Fashion Design </h4>
+                    <h4 style={{ fontSize: "13px" }}>NIFT Hyderabad </h4>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="owl-item">
+                <div className="features-item">
+                  <div className="features-icon">
+                    <img
+                      style={{ height: "200px", width: "190px" }}
+                      src="/assets/images/afd/meera.jpg"
+                      alt="logo"
+                    />
+                  </div>
+                  <div className="features-title">Neha S</div>
+                  <div className="features-descr">
+                    <h4 style={{ fontSize: "15px" }}>Textile Design </h4>
+                    <h4 style={{ fontSize: "13px" }}>NIFT Kannur </h4>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="owl-item">
+                <div className="features-item">
+                  <div className="features-icon">
+                    <img
+                      style={{ height: "200px", width: "190px" }}
+                      src="/assets/images/afd/Nandana.jpg"
+                      alt="logo"
+                    />
+                  </div>
+                  <div className="features-title">Nandana Manoj</div>
+                  <div className="features-descr">
+                    <h4 style={{ fontSize: "15px" }}>Fashion Communication</h4>
+                    <h4 style={{ fontSize: "13px" }}>NIFT Mumbai </h4>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="owl-item">
+                <div className="features-item">
+                  <div className="features-icon">
+                    <img
+                      style={{ height: "200px", width: "190px" }}
+                      src="/assets/images/afd/Navneeth.png"
+                      alt="logo"
+                    />
+                  </div>
+                  <div className="features-title">Navneeth K</div>
+                  <div className="features-descr">
+                    <h4 style={{ fontSize: "15px" }}>Fashion Communication</h4>
+                    <h4 style={{ fontSize: "13px" }}>NIFT Mumbai </h4>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="owl-item">
+                <div className="features-item">
+                  <div className="features-icon">
+                    <img
+                      style={{ height: "200px", width: "190px" }}
+                      src="/assets/images/afd/Siddarth.jpeg"
+                      alt="logo"
+                    />
+                  </div>
+                  <div className="features-title">Siddarth S</div>
+                  <div className="features-descr">
+                    <h4 style={{ fontSize: "15px" }}>Fashion Communication</h4>
+                    <h4 style={{ fontSize: "13px" }}>NIFT Hyderabad </h4>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="owl-item">
+                <div className="features-item">
+                  <div className="features-icon">
+                    <img
+                      style={{ height: "200px", width: "190px" }}
+                      src="/assets/images/afd/Smita.jpg"
+                      alt="logo"
+                    />
+                  </div>
+                  <div className="features-title">Smriti A</div>
+                  <div className="features-descr">
+                    <h4 style={{ fontSize: "15px" }}>Fashion Communication</h4>
+                    <h4 style={{ fontSize: "13px" }}>NIFT Chennai </h4>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="owl-item">
+                <div className="features-item">
+                  <div className="features-icon">
+                    <img
+                      style={{ height: "200px", width: "190px" }}
+                      src="/assets/images/afd/sreeram.jpg"
+                      alt="logo"
+                    />
+                  </div>
+                  <div className="features-title">Sreeram S</div>
+                  <div className="features-descr">
+                    <h4 style={{ fontSize: "15px" }}>Fashion Communication</h4>
+                    <h4 style={{ fontSize: "13px" }}>NIFT Bangalore </h4>
                   </div>
                 </div>
               </SwiperSlide>

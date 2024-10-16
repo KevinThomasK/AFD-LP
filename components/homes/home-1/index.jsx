@@ -130,7 +130,7 @@ export default function Home1({ onePage = false, dark = false }) {
       <section
         className={`page-section  ${dark ? "bg-dark-1 light-content" : ""}`}
       >
-        <Promo />{" "}
+        <Promo />
       </section>
       <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
 

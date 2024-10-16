@@ -85,7 +85,20 @@ const ContactForm = () => {
   return (
     <div className="container my-5">
       <div className="contact-form rounded bg-white">
-        <h2 className="text-center mb-4">Get A Free Consultation</h2>
+        <h2 className="text-center mb-4">
+          Turn Your Fashion Dreams into Reality!
+        </h2>
+        <h3
+          className="text-center"
+          style={{
+            marginBottom: "50px",
+            color: "#555555",
+
+            fontSize: "25px",
+          }}
+        >
+          Apply Now
+        </h3>
         <form onSubmit={(e) => e.preventDefault()}>
           <div className="row mb-3">
             <div className="col-md-6">

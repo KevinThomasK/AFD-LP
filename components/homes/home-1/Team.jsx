@@ -29,7 +29,7 @@ export default function Team() {
               {/* <div className="blockquote-icon" aria-hidden="true">
               <FaBook style={{ fontSize: "28px", marginBottom: "50px" }} />
             </div> */}
-              <p>
+              <p style={{ fontSize: "40px", fontWeight: "bold" }}>
                 NIFT Entrance Courses From{" "}
                 <span style={{ color: "#D84315" }}>afdindia</span>
               </p>
