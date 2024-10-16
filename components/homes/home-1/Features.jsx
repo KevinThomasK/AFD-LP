@@ -274,6 +274,54 @@ export default function Features() {
                   </div>
                 </div>
               </SwiperSlide>
+              <SwiperSlide className="owl-item">
+                <div className="features-item">
+                  <div className="features-icon">
+                    <img
+                      style={{ height: "200px", width: "190px" }}
+                      src="/assets/images/afd/Arya.png"
+                      alt="logo"
+                    />
+                  </div>
+                  <div className="features-title">Arya Rajeev</div>
+                  <div className="features-descr">
+                    <h4 style={{ fontSize: "15px" }}>M.Des </h4>
+                    <h4 style={{ fontSize: "13px" }}>NIFT Kannur </h4>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="owl-item">
+                <div className="features-item">
+                  <div className="features-icon">
+                    <img
+                      style={{ height: "200px", width: "190px" }}
+                      src="/assets/images/afd/Athulya.png"
+                      alt="logo"
+                    />
+                  </div>
+                  <div className="features-title">Athulya M V</div>
+                  <div className="features-descr">
+                    <h4 style={{ fontSize: "15px" }}>Fashion Design </h4>
+                    <h4 style={{ fontSize: "13px" }}>NIFT Chennai</h4>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="owl-item">
+                <div className="features-item">
+                  <div className="features-icon">
+                    <img
+                      style={{ height: "200px", width: "190px" }}
+                      src="/assets/images/afd/devananda.png"
+                      alt="logo"
+                    />
+                  </div>
+                  <div className="features-title">Devananda</div>
+                  <div className="features-descr">
+                    <h4 style={{ fontSize: "15px" }}>Accessory Design </h4>
+                    <h4 style={{ fontSize: "13px" }}>NIFT Chennai</h4>
+                  </div>
+                </div>
+              </SwiperSlide>
             </>
 
             <div className="owl-controls clickable">

@@ -406,3 +406,4 @@ export default function Home1({ onePage = false, dark = false }) {
     </>
   );
 }
+

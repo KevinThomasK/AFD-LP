@@ -1,14 +1,26 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import ContactForm from "./ContactForm"; // Import your ContactModal
 
 const FullScreenModal = ({ isOpen, onClose }) => {
+  useEffect(() => {
+    // Toggle body no-scroll class when modal is opened or closed
+    if (isOpen) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+    return () => {
+      document.body.classList.remove("no-scroll"); // Clean up on unmount
+    };
+  }, [isOpen]);
+
   if (!isOpen) return null; // Don't render the modal if it's not open
 
   return (
     <div
       className="custom-modal-backdrop"
-      style={{ marginTop: "70px" }}
+      style={{ marginTop: "45px" }}
       onClick={onClose}
     >
       <div

@@ -4,7 +4,10 @@ import { parallaxMouseMovement } from "@/utlis/parallax";
 import Image from "next/image";
 
 import { useEffect, useState } from "react";
-import ModalVideo from "react-modal-video";
+//import ModalVideo from "react-modal-video";
+import { ModalTrigger } from "@/components/Modal";
+
+//import BtnComponent from "@/components/BtnComponent";
 
 export default function Hero1() {
   // State variables for each image's source
@@ -21,8 +24,16 @@ export default function Hero1() {
   useEffect(() => {
     parallaxMouseMovement();
   }, []);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
-  const [isOpen, setOpen] = useState(false);
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  //const [isOpen, setOpen] = useState(false);
 
   // Function to handle second image click (swap second with first)
   const handleSecondImageClick = () => {
@@ -39,6 +50,8 @@ export default function Hero1() {
 
   return (
     <>
+      {" "}
+      <ModalTrigger isOpen={isModalOpen} onClose={closeModal} />
       <div className="container min-height-100vh d-flex align-items-center pt-100 pb-100 pt-sm-120 pb-sm-120">
         {/* Home Section Content */}
         <div className="home-content text-start">
@@ -82,12 +95,14 @@ export default function Hero1() {
                   data-wow-duration="1.2s"
                   data-wow-offset={0}
                 >
-                  <a
-                    href="#contact"
+                  <button
+                    onClick={openModal}
                     className="btn btn-mod btn-large btn-round btn-hover-anim align-middle me-2 me-sm-5 mt-10"
                   >
                     <span>I Wish To Know More</span>
-                  </a>
+                  </button>
+
+                  {/* <BtnComponent /> */}
                 </div>
               </div>
             </div>
@@ -173,13 +188,13 @@ export default function Hero1() {
         </div>
         {/* End Scroll Down */}
       </div>
-      <ModalVideo
+      {/* <ModalVideo
         channel="youtube"
         youtube={{ mute: 0, autoplay: 0 }}
         isOpen={isOpen}
         videoId="jTea_8Fk5Ns"
         onClose={() => setOpen(false)}
-      />
+      /> */}
     </>
   );
 }
