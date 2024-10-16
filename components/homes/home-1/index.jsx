@@ -73,7 +73,7 @@ export default function Home1({ onePage = false, dark = false }) {
           <div className="row">
             <div className="col-lg-4 mb-md-60 mb-xs-50">
               <h2 className="section-title mb-20 wow fadeInUp">
-                India&apos;s Oldest NIFT | NID Entrance Exam
+                India&apos;s Oldest NIFT | NID Entrance Institute
               </h2>
 
               {/* <p
@@ -224,7 +224,7 @@ export default function Home1({ onePage = false, dark = false }) {
         <div className="col-md-6">
           {/* <h2 className="section-caption mb-xs-10">Our Story</h2> */}
           <h3 className="section-title mb-0" style={{ fontSize: "20px" }}>
-            <AnimatedText text="Congrats To Our 2024 Batch" />
+            <AnimatedText text="Success Stories of Our 2024 Batch" />
           </h3>
         </div>
       </div>
@@ -406,4 +406,3 @@ export default function Home1({ onePage = false, dark = false }) {
     </>
   );
 }
-

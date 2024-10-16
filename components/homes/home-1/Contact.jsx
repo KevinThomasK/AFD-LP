@@ -102,7 +102,7 @@ export default function Contact() {
             id="contact_form"
           >
             <div className="row">
-              <div className="col-lg-6">
+              <div className="col-lg-12">
                 {/* Name */}
                 <div className="form-group">
                   <label htmlFor="name">Name</label>
@@ -115,6 +115,24 @@ export default function Contact() {
                     pattern=".{3,100}"
                     required
                     aria-required="true"
+                  />
+                </div>
+              </div>
+              <div className="col-lg-6">
+                {/* Phone */}
+                <div className="form-group">
+                  <label htmlFor="phone">Phone / WhatsApp</label>
+                  <input
+                    type="number"
+                    name="phone"
+                    id="phone"
+                    required
+                    aria-required="true"
+                    maxLength={12} // Max length for 12 digits
+                    minLength={10}
+                    className="input-lg round form-control"
+                    placeholder="Enter your phone number"
+                    pattern=".{5,100}"
                   />
                 </div>
               </div>
@@ -160,15 +178,7 @@ export default function Contact() {
                   </button>
                 </div>
               </div>
-              <div className="col-lg-7">
-                {/* Inform Tip */}
-                {/* <div className="form-tip pt-20 pt-sm-0 mt-sm-20">
-                  <i className="icon-info size-16" />
-                  All the fields are required. By sending the form you agree to
-                  the <a href="#">Terms &amp; Conditions</a> and{" "}
-                  <a href="#">Privacy Policy</a>.
-                </div> */}
-              </div>
+              <div className="col-lg-7"></div>
             </div>
             <div
               id="result"
@@ -177,27 +187,15 @@ export default function Contact() {
               aria-atomic="true"
             />
           </form>
+
           {/* End Contact Form */}
         </div>
 
         <div className="col-md-6 d-flex align-items-stretch">
-          {/* Google Map */}
-          {/* <div className="map-boxed">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3071.5318265717196!2d-75.60465104752062!3d39.660249785873326!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c703f3cdadbfdb%3A0x80d20252268fc006!2zMjQ1IFF1aWdsZXkgQmx2ZCBzdGUgaywgTmV3IENhc3RsZSwgREUgMTk3MjAsINCh0L_QvtC70YPRh9C10L3RliDQqNGC0LDRgtC4INCQ0LzQtdGA0LjQutC4!5e0!3m2!1suk!2sua!4v1662469609333!5m2!1suk!2sua"
-              width={600}
-              height={450}
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
-          </div> */}
-
           <div className="map-boxed">
             <img
               className="custom-img"
-              src="/assets/images/afd/mpa.jpg"
+              src="/assets/images/afd/Footer.jpg"
               alt="map"
             />
           </div>

@@ -86,31 +86,46 @@ const ContactForm = () => {
     <div className="container my-5">
       <div className="contact-form rounded bg-white">
         <h2 className="text-center mb-4">
-          Turn Your Fashion Dreams into Reality!
+          Turn Your Fashion Dreams into Reality!
         </h2>
         <h3
           className="text-center"
           style={{
             marginBottom: "50px",
             color: "#555555",
-
             fontSize: "25px",
           }}
         >
           Apply Now
         </h3>
         <form onSubmit={(e) => e.preventDefault()}>
+          {/* Name - Full Width */}
+          <div className="mb-3">
+            <label htmlFor="name" className="form-label">
+              Name
+            </label>
+            <input
+              type="text"
+              className="form-control premium-input"
+              id="name"
+              placeholder="Enter your name"
+              value={formData.name}
+              onChange={handleInputChange}
+            />
+          </div>
+
+          {/* Phone and Email - Half Width Each */}
           <div className="row mb-3">
             <div className="col-md-6">
-              <label htmlFor="name" className="form-label">
-                Name
+              <label htmlFor="phone" className="form-label">
+                Phone
               </label>
               <input
                 type="text"
                 className="form-control premium-input"
-                id="name"
-                placeholder="Enter your name"
-                value={formData.name}
+                id="phone"
+                placeholder="Enter your phone number"
+                value={formData.phone}
                 onChange={handleInputChange}
               />
             </div>
@@ -129,31 +144,18 @@ const ContactForm = () => {
             </div>
           </div>
 
+          {/* Message - Textarea */}
           <div className="mb-3">
-            <label htmlFor="phone" className="form-label">
-              Phone
+            <label htmlFor="message" className="form-label">
+              Message
             </label>
-            <input
-              type="text"
+            <textarea
               className="form-control premium-input"
-              id="phone"
-              placeholder="Enter your phone number"
-              value={formData.phone}
+              id="message"
+              placeholder="Enter your message"
+              value={formData.message}
               onChange={handleInputChange}
-            />
-          </div>
-
-          <div className="mb-3">
-            <label htmlFor="whatsapp" className="form-label">
-              WhatsApp
-            </label>
-            <input
-              type="text"
-              className="form-control premium-input"
-              id="whatsapp"
-              placeholder="Enter your WhatsApp number"
-              value={formData.whatsapp}
-              onChange={handleInputChange}
+              style={{ height: "130px" }}
             />
           </div>
 

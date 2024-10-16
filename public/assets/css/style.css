@@ -4254,7 +4254,6 @@ html:not(.mobile) .wow-p {
   overflow: hidden;
 }
 
-/* Keep existing modal styles */
 .custom-modal-backdrop {
   position: fixed;
   top: 0;
@@ -4294,6 +4293,7 @@ html:not(.mobile) .wow-p {
   overflow-y: auto;
   max-height: 80vh;
 }
+
 
 .custom-close-btn {
   font-size: 1.5rem;
