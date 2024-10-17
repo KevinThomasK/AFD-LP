@@ -10,10 +10,9 @@ export default function Facts() {
         {numberItems.map((item, index) => (
           <div
             key={index}
-            className={`col-6 col-sm-6 col-lg-5 mt-50 mt-xs-30 wow fadeScaleIn ${
+            className={`col-6 col-sm-6 col-lg-5 mt-50 mt-xs-30  ${
               index % 2 !== 0 ? "offset-lg-2" : ""
             }`}
-            data-wow-delay={item.delay}
           >
             <div className="number-title mb-10">{item.title}</div>
             <div className="number-descr">{item.description}</div>

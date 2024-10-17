@@ -72,7 +72,7 @@ export default function Home1({ onePage = false, dark = false }) {
         <div className="container position-relative">
           <div className="row">
             <div className="col-lg-4 mb-md-60 mb-xs-50">
-              <h2 className="section-title mb-20 wow fadeInUp">
+              <h2 className="section-title mb-20 ">
                 India&apos;s Oldest NIFT | NID Entrance Institute
               </h2>
 
@@ -83,7 +83,8 @@ export default function Home1({ onePage = false, dark = false }) {
                 We provide the effective ideas that grow businesses of our
                 clients.
               </p> */}
-              <div className="local-scroll wow fadeInUp" data-wow-delay="0.1s">
+              {/* <div className="local-scroll wow fadeInUp" data-wow-delay="0.1s"> */}
+              <div className="local-scroll ">
                 {onePage ? (
                   <button
                     onClick={openModal}
