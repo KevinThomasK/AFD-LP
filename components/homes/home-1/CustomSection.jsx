@@ -18,7 +18,7 @@ const NIFTCoursePromo = () => {
       <div
         className="d-flex justify-content-center"
         style={{
-          backgroundColor: "#ffcd7b",
+          backgroundColor: "#D84315",
           color: "black",
           padding: "2rem 1rem",
         }}

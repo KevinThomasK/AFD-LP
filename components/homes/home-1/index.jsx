@@ -83,7 +83,7 @@ export default function Home1({ onePage = false, dark = false }) {
                 We provide the effective ideas that grow businesses of our
                 clients.
               </p> */}
-              <div className="local-scroll wow fadeInUp" data-wow-delay="0.2s">
+              <div className="local-scroll wow fadeInUp" data-wow-delay="0.1s">
                 {onePage ? (
                   <button
                     onClick={openModal}
