@@ -88,7 +88,7 @@ const StickyModal = () => {
           <a
             class="btn_black d-flex align-items-center justify-content-center"
             href="tel:+919895484652"
-            style={{ backgroundColor: "darkblue" }}
+            style={{ backgroundColor: "#D84315", textDecoration: "none" }}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -27,7 +27,7 @@ const NIFTCoursePromo = () => {
           <div className="row align-items-center">
             <div className="col-lg-8 mx-auto">
               <h1 className="mb-3">
-                NIFT Synopsis+ | Entrance Exam Crash Course Starting Now!
+                NIFT SynopsisPlus | Entrance Exam Crash Course Starting Now!
               </h1>
               <h4 className="mb-4">
                 30 Days Online & Offline Crash Course - Classes till Exam

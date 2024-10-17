@@ -96,7 +96,7 @@ const ContactForm = () => {
             fontSize: "25px",
           }}
         >
-          Get A Call Back
+          Talk to our NIFT counsellor for free exam guidance.
         </h3>
         <form onSubmit={(e) => e.preventDefault()}>
           {/* Name - Full Width */}
@@ -162,6 +162,7 @@ const ContactForm = () => {
           <button
             type="button"
             className="btn btn-primary premium-btn"
+            style={{ background: "green", border: "none" }}
             onClick={handleSubmit}
           >
             Submit

@@ -1,26 +1,6 @@
 export const teamMembers = [
   {
     name: "Apply Now",
-    role: "Developer, co-founder",
-    image: "/assets/images/afd/course1.jpg",
-    socials: [
-      { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
-      { platform: "Twitter", icon: "fa-twitter", url: "#" },
-      { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
-    ],
-  },
-  {
-    name: "Apply Now",
-    role: "UI/UX Designer, co-founder",
-    image: "/assets/images/afd/course2.jpg",
-    socials: [
-      { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
-      { platform: "Twitter", icon: "fa-twitter", url: "#" },
-      { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
-    ],
-  },
-  {
-    name: "Apply Now",
     role: "Web developer",
     image: "/assets/images/afd/course3.jpg",
     socials: [
@@ -59,6 +39,27 @@ export const teamMembers = [
       { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
     ],
   },
+  {
+    name: "Apply Now",
+    role: "Developer, co-founder",
+    image: "/assets/images/afd/course1.jpg",
+    socials: [
+      { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
+      { platform: "Twitter", icon: "fa-twitter", url: "#" },
+      { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
+    ],
+  },
+  {
+    name: "Apply Now",
+    role: "UI/UX Designer, co-founder",
+    image: "/assets/images/afd/course2.jpg",
+    socials: [
+      { platform: "Facebook", icon: "fa-facebook-f", url: "#" },
+      { platform: "Twitter", icon: "fa-twitter", url: "#" },
+      { platform: "Pinterest", icon: "fa-pinterest-p", url: "#" },
+    ],
+  },
+
 ];
 export const teamMembers2 = [
   {
