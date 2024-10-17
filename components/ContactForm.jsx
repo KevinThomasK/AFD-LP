@@ -84,24 +84,31 @@ const ContactForm = () => {
 
   return (
     <div className="container my-1">
-      <div className="contact-form rounded bg-white">
-        {/* <h2 className="text-center mb-4">
-          Turn Your Fashion Dreams into Reality!
-        </h2> */}
+      <div
+        className="contact-form rounded"
+        style={{
+          backgroundColor: "#c8dc91", // Light background color
+          padding: "20px",
+        }}
+      >
         <h3
           className="text-center"
           style={{
             marginBottom: "10px",
-            color: "#555555",
+            color: "#333333", // Darker text color
             fontSize: "25px",
           }}
         >
-          Talk to our NIFT counsellor for free exam guidance.
+          Register Now To Get Free Counseling
         </h3>
         <form onSubmit={(e) => e.preventDefault()}>
           {/* Name - Full Width */}
           <div className="mb-3">
-            <label htmlFor="name" className="form-label">
+            <label
+              htmlFor="name"
+              className="form-label"
+              style={{ color: "#555" }}
+            >
               Name
             </label>
             <input
@@ -111,13 +118,22 @@ const ContactForm = () => {
               placeholder="Enter your name"
               value={formData.name}
               onChange={handleInputChange}
+              style={{
+                backgroundColor: "#fffbea", // Light background for inputs
+                border: "1px solid #ccc", // Subtle border
+                color: "#333", // Darker text color
+              }}
             />
           </div>
 
           {/* Phone and Email - Half Width Each */}
           <div className="row mb-3">
             <div className="col-md-6">
-              <label htmlFor="phone" className="form-label">
+              <label
+                htmlFor="phone"
+                className="form-label"
+                style={{ color: "#555" }}
+              >
                 Phone
               </label>
               <input
@@ -127,10 +143,19 @@ const ContactForm = () => {
                 placeholder="Enter your phone number"
                 value={formData.phone}
                 onChange={handleInputChange}
+                style={{
+                  backgroundColor: "#fffbea",
+                  border: "1px solid #ccc",
+                  color: "#333",
+                }}
               />
             </div>
             <div className="col-md-6">
-              <label htmlFor="email" className="form-label">
+              <label
+                htmlFor="email"
+                className="form-label"
+                style={{ color: "#555" }}
+              >
                 Email
               </label>
               <input
@@ -140,13 +165,22 @@ const ContactForm = () => {
                 placeholder="Enter your email"
                 value={formData.email}
                 onChange={handleInputChange}
+                style={{
+                  backgroundColor: "#fffbea",
+                  border: "1px solid #ccc",
+                  color: "#333",
+                }}
               />
             </div>
           </div>
 
           {/* Message - Textarea */}
           <div className="mb-3">
-            <label htmlFor="message" className="form-label">
+            <label
+              htmlFor="message"
+              className="form-label"
+              style={{ color: "#555" }}
+            >
               Message
             </label>
             <textarea
@@ -155,18 +189,33 @@ const ContactForm = () => {
               placeholder="Enter your message"
               value={formData.message}
               onChange={handleInputChange}
-              style={{ height: "70px" }}
+              style={{
+                height: "70px",
+                backgroundColor: "#fffbea",
+                border: "1px solid #ccc",
+                color: "#333",
+              }}
             />
           </div>
 
-          <button
-            type="button"
-            className="btn btn-primary premium-btn"
-            style={{ background: "green", border: "none" }}
-            onClick={handleSubmit}
-          >
-            Submit
-          </button>
+          {/* Centered Button */}
+          <div className="text-center">
+            <button
+              type="button"
+              className="btn btn-primary premium-btn"
+              style={{
+                backgroundColor: "#D84315", // Green background for button
+                border: "none",
+                padding: "10px 20px",
+                fontSize: "20px",
+                width: "100%",
+                marginTop: "20px",
+              }}
+              onClick={handleSubmit}
+            >
+              Submit
+            </button>
+          </div>
         </form>
       </div>
     </div>

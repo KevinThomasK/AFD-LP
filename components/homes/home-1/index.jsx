@@ -33,7 +33,7 @@ const ParallaxContainer = dynamic(
 );
 export default function Home1({ onePage = false, dark = false }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [initialTimeout, setInitialTimeout] = useState(true);
+  const [hasModalOpened, setHasModalOpened] = useState(false);
 
   const closeModal = () => {
     setIsModalOpen(false);
@@ -44,21 +44,15 @@ export default function Home1({ onePage = false, dark = false }) {
   };
 
   useEffect(() => {
-    if (initialTimeout) {
-      const initialTimer = setTimeout(() => {
+    if (!hasModalOpened) {
+      const timer = setTimeout(() => {
         setIsModalOpen(true); // Open the modal after 5 seconds
-        setInitialTimeout(false); // Set flag to false after the first open
+        setHasModalOpened(true); // Set flag to true after the first open
       }, 5000); // 5 seconds
 
-      return () => clearTimeout(initialTimer); // Cleanup
-    } else {
-      const interval = setInterval(() => {
-        setIsModalOpen(true); // Open the modal every 30 seconds
-      }, 30000); // 30 seconds
-
-      return () => clearInterval(interval); // Cleanup
+      return () => clearTimeout(timer); // Cleanup
     }
-  }, [initialTimeout]);
+  }, [hasModalOpened]);
 
   return (
     <>
@@ -224,9 +218,9 @@ export default function Home1({ onePage = false, dark = false }) {
       <div className="row mb-60 mb-xs-30" style={{ textAlign: "center" }}>
         <div className="col-md-6">
           {/* <h2 className="section-caption mb-xs-10">Our Story</h2> */}
-          <h3 className="section-title mb-0" style={{ fontSize: "20px" }}>
+          {/* <h3 className="section-title mb-0" style={{ fontSize: "20px" }}>
             <AnimatedText text="Success Stories of Our 2024 Batch" />
-          </h3>
+          </h3> */}
         </div>
       </div>
       <section
@@ -360,7 +354,9 @@ export default function Home1({ onePage = false, dark = false }) {
                 data-wow-duration="1.2s"
                 data-wow-offset={255}
               >
-                <h2 className="section-title mb-50 mb-sm-20">How we work? </h2>
+                {/* <h2 className="section-title mb-50 mb-sm-20">
+                  Frequently Asked Questions ?{" "}
+                </h2> */}
                 <Faq />
                 <div className="local-scroll">
                   {onePage ? (
