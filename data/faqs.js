@@ -9,13 +9,33 @@ export const faqs = [
     id: 2,
     question: "02. Who is eligible for the NIFT B.Des program?",
     answer:
-      "The following are the eligibility for NIFT B.Des: Maximum age limit: 24 years , Must have passed the +2 level examination in the 10+2 pattern from a recognised board.",
+      "For UG Programs: Maximum age limit: 24 years; pass in the +2 level examination in the 10+2 pattern from a recognized board.For PG Programs: No age limit; Undergraduate Degree in any discipline from any Institute/ University recognized by law in India.",
   },
   {
     id: 3,
     question: "03. How many seats are available in NIFT?",
-    answer:
-      "The following are seats available for the different programmes : B.Des 3309 B.F.Tech 652 MFM 786 M.Des 304 M.F.Tech 	148",
+    answer: "The following are seats available for the different programmes ",
+    table: [
+      {
+        col1: "Fashion Design  ",
+        col2: "742",
+      },
+      {
+        col1: "Leather Design  ",
+        col2: "172",
+      },
+      { col1: "Accessory Design  ", col2: "654" },
+      { col1: "Textile Design  ", col2: "743" },
+      { col1: "Kintwear  Design  ", col2: "356" },
+      { col1: "Fashion Communication  ", col2: "742" },
+      { col1: "B.Des   ", col2: "3399" },
+      { col1: "B.F.Tech  ", col2: "652 " },
+      { col1: "MFM  ", col2: "786" },
+      { col1: "M.Des  ", col2: "304  " },
+      { col1: "M.F.Tech  ", col2: "148 " },
+      { col1: "M.F.Tech :", col2: "148 " },
+      { col1: "TOTAL ", col2: "5289" },
+    ],
   },
   {
     id: 4,

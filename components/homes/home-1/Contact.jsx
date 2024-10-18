@@ -57,7 +57,7 @@ export default function Contact() {
                   <div>
                     <a href="mailto:info@afdindia.com">info@afdindia.com</a>
                   </div>
-                  <div>+91 9895484652</div>
+                  <a href="tel:+919895484652">+91 9895484652</a>
                 </div>
               </div>
             </div>
@@ -173,6 +173,7 @@ export default function Contact() {
                     className="submit_btn btn btn-mod btn-large btn-round btn-hover-anim"
                     id="submit_btn"
                     aria-controls="result"
+                    style={{ background: "#D84315" }}
                   >
                     <span>Send Message</span>
                   </button>

@@ -56,7 +56,7 @@ export const featureItems2 = [
     path: "M16 2l-1.2-.6L7.5 18.5l1.2.6L16 2zm.4 4.5l5.5 4.5-5.5 4.5.7.7 6.2-5.2L16.9 5.8l-.5.7zm-9.4 0L2 10.5l5.3 4.5-.7.7L.9 9.5 8 5.8l.5.7z",
     title: "Real-World Design Thinking",
     description:
-      "AFD India’s curriculum extends beyond the classroom, incorporating practical projects and activities such as outdoor sketching and analyzing current events. This helps sharpen the student's design thinking and problem-solving abilities.",
+      "Curriculum of afdindia extends beyond the classroom, incorporating practical projects and activities such as outdoor sketching and analyzing current events. This helps sharpen the student's design thinking and problem-solving abilities.",
   },
 
   {
@@ -74,7 +74,7 @@ export const featureItems2 = [
     path: "M12 2L2 12h20L12 2zm0 2.1L18.8 12H5.2L12 4.1zM11 12v5h2v-5h-2zm0 6v2h2v-2h-2z",
     title: "Highest NIFT Results",
     description:
-      "AFD India consistently produces top NIFT results, with students achieving leading ranks in the entrance exams year after year.",
+      "afdindia consistently produces top NIFT results, with students achieving leading ranks in the entrance exams year after year.",
   },
 ];
 

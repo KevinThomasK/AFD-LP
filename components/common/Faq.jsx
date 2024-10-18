@@ -44,6 +44,18 @@ export default function Faq({ faqData = faqDataMain }) {
             className="black faqAnswer"
           >
             {item.answer}
+            {item?.table && (
+              <table>
+                {item.table?.map((row, i) => {
+                  return (
+                    <tr key={i}>
+                      <td>{row.col1}</td>
+                      <td>{row.col2}</td>
+                    </tr>
+                  );
+                })}
+              </table>
+            )}
           </dd>
         </React.Fragment>
       ))}
